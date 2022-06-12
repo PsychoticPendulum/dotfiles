@@ -1,0 +1,1 @@
+/home/psychicpenguin/.local/share/broot/launcher/fish/br.fish
