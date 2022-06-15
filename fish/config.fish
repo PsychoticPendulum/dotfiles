@@ -1,12 +1,11 @@
 # vim:ft=dosini
-# |-------------------------------------------------------------------------|
-# |  ____                 _     _      ____                        _        |
-# | |  _ \ ___ _   _  ___| |__ (_) ___|  _ \ ___ _ __   __ _ _   _(_)_ __   |
-# | | |_) / __| | | |/ __| '_ \| |/ __| |_) / _ \ '_ \ / _` | | | | | '_ \  |
-# | |  __/\__ \ |_| | (__| | | | | (__|  __/  __/ | | | (_| | |_| | | | | | |
-# | |_|   |___/\__, |\___|_| |_|_|\___|_|   \___|_| |_|\__, |\__,_|_|_| |_| |
-# |           |___/                                   |___/                 |
-# |-------------------------------------------------------------------------| 
+
+# Git
+alias gc="git clone"
+alias gcm="git commit -m"
+alias gp="git push"
+alias gu="git pull"
+alias ga="git add"
 
 set __fish_git_prompt_show_informative_status
 set __fish_git_prompt_showcolorhints
@@ -119,7 +118,7 @@ alias cp="cp -v"
 alias mv="mv -v"
 alias ra="ranger"
 alias rh="ranger --cmd 'set show_hidden True'"
-alias nfetch="neofetch --ascii_distro Arch | sed s/'[Aa]rtix'/'Gentoo'/g | sed s/'Intel i5-10210U (8)'/'AMD Ryzen Threadripper 3995X (128)'/g | lolcat -F 0.1 -a -s 5000 -S 174"
+alias nfetch="neofetch --ascii_distro Arch | lolcat -F 0.1 -a -s 5000 -S 174"
 
 # Locations
 alias cra="clear ; ra"
