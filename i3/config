@@ -39,12 +39,14 @@ floating_modifier $mod
 # start a terminal
 set $TERMINAL kitty
 bindsym $mod+Return exec kitty
+bindsym $mod+shift+Return exec kitty tmux
 bindsym $alt+Return exec xfce4-terminal
 
 # Gap
-gaps outer 5
-gaps inner 10
+gaps outer 7
+gaps inner 7
 hide_edge_borders both
+# border_radius 5
 
 # Multi monitors
 bindsym $mod+Tab workspace next_on_output
@@ -136,7 +138,7 @@ bindsym $mod+Shift+9 move container to workspace $lock
 bindsym $mod+Shift+0 move container to workspace $vpn
 
 # Set workspaces
-for_window [class=".*"] border pixel 2
+for_window [class=".*"] border pixel 3
 
 # Internet (WS2)
 for_window [class="firefox"] move to workspace $internet
@@ -203,11 +205,11 @@ bindsym $mod+r mode "resize"
 
 # Rice
 set $text-color			#f3f4f5
-set $bg-color-active		#0a81f5
-set $bg-color-inactive		#001323
+set $bg-color-active		#810af5
+set $bg-color-inactive		#130023
 set $inactive-text-color	#ffffff
 set $urgent-bg-color		#3f0908
-set $indicator-color		#0a81f5
+set $indicator-color		#810af5
 
 # Set window colors
 #				border			background		text			indicator
@@ -240,7 +242,7 @@ exec_always --no-startup-id "sh $HOME/.config/polybar/launch.sh"
 ## User bindings
 # Lock
 bindsym $mod+l exec i3lock -i ~/Wallpapers/ArchWindows.png -c 000000
-bindsym $mod+shift+x exec i3lock -i ~/Wallpapers/ArchPlasmaPure.png -c 000000
+bindsym $mod+shift+x exec i3lock -i ~/Wallpapers/Ace.png -c 000000
 #bindsym $mod+shift+x exec blurlock
 # Firefox & Brave
 bindsym $mod+shift+f exec firefox
@@ -276,7 +278,7 @@ bindsym $mod+shift+g exec gimp
 bindsym $mod+shift+a exec pcmanfm
 # VirtualBox
 bindsym $mod+shift+v exec virtualbox -style Fusion
-# VS Code
+# VSCode
 bindsym $mod+c exec code
 
 # SaveScreen
@@ -285,6 +287,12 @@ bindsym $mod+shift+m exec python3 ~/Developer/PYTHON/Particles/Particles.py
 # Opacity
 exec_always picom --config ~/.config/picom/picom.conf
 
+# Screenkey
+bindsym $alt+s exec screenkey
+bindsym $alt+shift+s exec killall -9 screenkey
+
 # Autostart
 exec xmodmap -e 'clear lock'
 exec kitty '/home/psychicpenguin/Developer/.scripts/boot.sh'
+
+# exec_always --no-startup-id autotiling
