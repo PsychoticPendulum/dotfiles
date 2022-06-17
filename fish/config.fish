@@ -1,5 +1,7 @@
 # vim:ft=dosini
 
+fish_vi_key_bindings
+
 # Git
 alias gc="git clone"
 alias gcm="git commit -m"
@@ -52,36 +54,37 @@ function fish_prompt
 	set --local full_directory $PWD
 	set --local outside "/mnt"
 	set --local repo "$ls .git"
+	set --local user $(echo -n $USER)
 
-	set_color 00f
-	echo -n "╭─  "
+	set_color 6f0
+	echo -n "$user "
+	set_color 0f0
+	echo -n " "
 
 	if string match -e -q $outside $full_directory
 		set_color 0ff
 	else if string match -q "/" $full_directory
 		set_color f00
 	else
-		set_color 08f
+		set_color 6f0
 	end
-	echo -n $directory
-	set_color 00f
-	echo -n " "
+	echo -n " $directory/"
 	set_color fff
 	printf '%s ' (__fish_git_prompt)	
 	echo ""
 
-	set_color 00f
-	echo -n "╰─ "
+	set_color 0f0
+	echo -n " ╰─ "
 
 	if test "$exit_code" != "0"
 		set_color f00
 		echo -n "["
 		echo -n $exit_code
 		echo -n "]"
-		set_color 00f
+		set_color 0f0
 	end
 	
-	set_color 80f
+	set_color ae0
 	echo "~ "
 end
 
@@ -149,7 +152,7 @@ alias pg="ping -c 4 8.8.8.8"
 alias nasty="sudo mount -t nfs 192.168.178.24:/nasty /mnt/NAS"
 
 # Gaming
-lias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
+alias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
 
 # sudo ip route add default via <gateway> dev <interface>
 
