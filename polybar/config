@@ -1,27 +1,16 @@
-; vim:ft=dosini
-; |-------------------------------------------------------------------------|
-; |  ____                 _     _      ____                        _        |
-; | |  _ \ ___ _   _  ___| |__ (_) ___|  _ \ ___ _ __   __ _ _   _(_)_ __   |
-; | | |_) / __| | | |/ __| '_ \| |/ __| |_) / _ \ '_ \ / _` | | | | | '_ \  |
-; | |  __/\__ \ |_| | (__| | | | | (__|  __/  __/ | | | (_| | |_| | | | | | |
-; | |_|   |___/\__, |\___|_| |_|_|\___|_|   \___|_| |_|\__, |\__,_|_|_| |_| |
-; |           |___/                                   |___/                 |
-; |-------------------------------------------------------------------------| 
+; vim:set ft=dosini:
 
-;	##################
-;	##### COLORS #####
-;	##################
+#   |-----------------------|
+#   |       Includes        |
+#   |-----------------------|
 
-[colors]
-background = #c0000000
-foreground = #ffafbfcf
-primary = #ff810af5
-secondary = #ff4f006f
-alert = #ffff0000
+include-file = /home/$USER/.config/polybar/style
+include-file = /home/$USER/.config/polybar/colorscheme
 
-;	################
-;	##### BAR1 #####
-;	################
+
+#   |-----------------------|
+#   |       Bars			|
+#   |-----------------------|
 
 [bar/bar1]
 monitor =${env:MONITOR:}
@@ -29,45 +18,46 @@ width = 100%
 height = 17
 radius = 0.0
 fixed-center = true
-bottom = true
+bottom = ${style.bottom}
 
 background = ${colors.background}
 foreground = ${colors.foreground}
 
-line-size = 3
-line-color = #ffffff
+line-size	= 2
+line-color	= ${colors.foreground} 
 
-border-size = 5
-border-color = ${colors.background}
+border-size		= 7
+border-color	= ${colors.background}
 
-padding-left = 1
-padding-right = 1
+padding-left	= ${style.padding} 
+padding-right	= ${style.padding} 
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left	= ${style.padding} 
+module-margin-right = ${style.padding} 
 
 font-0 = Source Code Pro:pixelsize=9;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FontAwesome:pixelsize=9;1
 
-modules-left = i3 vpn ip ping
-modules-center = cpu binclock memory 
-modules-right = uptime filesystem dates battery
+modules-left = i3 ip ping
+modules-center = cpu memory 
+modules-right = packages uptime filesystem dates battery
 
 tray-position = right
 tray-padding = 2
 cursor-click = pointer
 cursor-scroll = ns-resize
 
-;	##############
-;	##### i3 #####
-;	##############
+
+#   |-----------------------|
+#   |       WinMan			|
+#   |-----------------------|
 
 [module/i3]
 type = internal/i3
 format = <label-state> <label-mode>
 index-sort = true
-wrapping-scroll = false
+wrapping-scroll = true
 
 label-mode-padding = 1
 label-mode-foreground = ${colors.foreground}
@@ -95,160 +85,158 @@ label-urgent = %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
 
-;	#################
-;	##### DATES #####
-;	#################
 
-[module/dates]
-type = custom/script
-exec = sh ~/Developer/.scripts/date.sh
-label = %{F#810af5}%{F#afbfcf} %output%
-interval = 1
-
-;	####################
-;	##### BINCLOCK #####
-;	####################
-
-[module/binclock]
-type = custom/script
-exec = python3 ~/Developer/.scripts/bclock.py
-label = %{F#810af5}%output%
-interval = 1
-
-;	##################
-;	##### UPTIME #####
-;	##################
-
-[module/uptime]
-type = custom/script
-exec = sh ~/Developer/.scripts/uptime.sh
-label = %{F#810af5} %{F#afbfcf}%output%
-interval = 1
-
-;   ##############
-;   ##### IP #####
-;   ##############
+#   |-----------------------|
+#   |       IPv4			|
+#   |-----------------------|
 
 [module/ip]
 type = custom/script
-exec = sh ~/Developer/.scripts/ip.sh
-label = %{F#810af5}%{F#afbfcf} %output%
+exec = sh ~/.config/polybar/scripts/ip.sh
 interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
 
-;   ################
-;   ##### PING #####
-;   ################
+
+#   |-----------------------|
+#   |       Ping			|
+#   |-----------------------|
 
 [module/ping]
 type = custom/script
-exec = sh ~/Developer/.scripts/ping.sh
-label = %{F#810af5}%{F#afbfcf} %output%
+exec = sh ~/.config/polybar/scripts/ping.sh
 interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
 
-;   #################
-;   ##### LPING #####
-;   #################
+#   |-----------------------|
+#   |       Packages		|
+#   |-----------------------|
 
-[module/lping]
+[module/packages]
 type = custom/script
-exec = sh ~/Developer/.scripts/lping.sh
-label = %{F#810af5}%output%
+exec = sh ~/.config/polybar/scripts/packages.sh
 interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
 
-;	###############
-;	##### VPN #####
-;	###############
+#   |-----------------------|
+#   |       Uptime			|
+#   |-----------------------|
 
-[module/vpn]
+[module/uptime]
 type = custom/script
-exec = sh ~/Developer/.scripts/vpn_active.sh
-label = %{F#810af5}%{F#afbfcf} %output%
+exec = sh ~/.config/polybar/scripts/uptime.sh
+interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
 
-;	######################
-;	##### FILESYSTEM #####
-;	######################
+#   |-----------------------|
+#   |       Filesystem		|
+#   |-----------------------|
 
 [module/filesystem]
-type = internal/fs
-interval = 25
+type = custom/script
+exec = sh ~/.config/polybar/scripts/disk.sh
+interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
 
-mount-0 = /
-; mount-1 = /mnt/media
 
-label-mounted = %{F#810af5}%mountpoint%%{F-}: %free%
-label-unmounted = %mountpoint%
-label-unmounted-foreground = ${colors.secondary}
+#   |-----------------------|
+#   |       Date			|
+#   |-----------------------|
 
-;	###############
-;	##### CPU #####
-;	###############
+[module/dates]
+type = custom/script
+exec = sh ~/.config/polybar/scripts/date.sh
+interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
+
+
+#   |-----------------------|
+#   |       CPU				|
+#   |-----------------------|
 
 [module/cpu]
 type = internal/cpu
-interval = 2
-label = %{F#810af5}CPU: %{F#afbfcf}%percentage%%
+interval = 1
+label = %percentage%%
 format = "<label> <ramp-coreload>"
-format-prefix-foreground = #f90000
-ramp-coreload-spacing = 0
+ramp-coreload-spacing = 1
 ramp-coreload-0 = ▁
 ramp-coreload-0-font = 2
-ramp-coreload-0-foreground = #003ac5
+ramp-coreload-0-foreground = #00ff00
 ramp-coreload-1 = ▂
 ramp-coreload-1-font = 2
-ramp-coreload-1-foreground = #1e34af
+ramp-coreload-1-foreground = #44ff00
 ramp-coreload-2 = ▃
 ramp-coreload-2-font = 2
-ramp-coreload-2-foreground = #3c2f99
+ramp-coreload-2-foreground = #88ff00
 ramp-coreload-3 = ▄
 ramp-coreload-3-font = 2
-ramp-coreload-3-foreground = #5a2984
+ramp-coreload-3-foreground = #ccff00
 ramp-coreload-4 = ▅
 ramp-coreload-4-font = 2
-ramp-coreload-4-foreground = #78246e
+ramp-coreload-4-foreground = #ffcc00
 ramp-coreload-5 = ▆
 ramp-coreload-5-font = 2
-ramp-coreload-5-foreground = #951e59
+ramp-coreload-5-foreground = #ff8800
 ramp-coreload-6 = ▇
 ramp-coreload-6-font = 2
-ramp-coreload-6-foreground = #b41943
+ramp-coreload-6-foreground = #ff4400
 ramp-coreload-7 = █
 ramp-coreload-7-font = 2
-ramp-coreload-7-foreground = #d2142e
+ramp-coreload-7-foreground = #ff0000
 
-;	##################
-;	##### MEMORY #####
-;	##################
+
+#   |-----------------------|
+#   |       RAM				|
+#   |-----------------------|
 
 [module/memory]
 type = internal/memory
-interval = 2
-label = %{F#810af5}MEM: %{F#afbfcf} [ %gb_used% / %percentage_used%% ]
-format = "<label> <ramp-used>"
+interval = 20
+label = %used% %percentage_used%%
+format = "<ramp-used> <label>"
 
 ramp-used-0 = ▁
 ramp-used-0-font = 2
-ramp-used-0-foreground = #003ac5
+ramp-used-0-foreground = #00ff00
 ramp-used-1 = ▂
 ramp-used-1-font = 2
-ramp-used-1-foreground = #1e34af
+ramp-used-1-foreground = #44ff00
 ramp-used-2 = ▃
 ramp-used-2-font = 2
-ramp-used-2-foreground = #3c2f99
+ramp-used-2-foreground = #88ff00
 ramp-used-3 = ▄
 ramp-used-3-font = 2
-ramp-used-3-foreground = #5a2984
+ramp-used-3-foreground = #ccff00
 ramp-used-4 = ▅
 ramp-used-4-font = 2
-ramp-used-4-foreground = #78246e
+ramp-used-4-foreground = #ffcc00
 ramp-used-5 = ▆
 ramp-used-5-font = 2
-ramp-used-5-foreground = #951e59
+ramp-used-5-foreground = #ff8800
 ramp-used-6 = ▇
 ramp-used-6-font = 2
-ramp-used-6-foreground = #b41943
+ramp-used-6-foreground = #ff4400
 ramp-used-7 = █
 ramp-used-7-font = 2
-ramp-used-7-foreground = #d2142e
+ramp-used-7-foreground = #ff0000
 
 ;	###################
 ;	##### BATTERY #####
