@@ -158,3 +158,4 @@ alias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
 
 # Things I need to remember
 alias lpi="echo LPI000525263"
+alias token="cat ~/.info/token.pgp"
