@@ -1,3 +1,4 @@
 #! /bin/bash
 
-ip -4 -o addr show wlan0 | awk '{print $4}'
+IP=$(ip -4 -o addr show | grep eth || grep wlan)  
+echo $IP | awk '{print $2,$4}'
