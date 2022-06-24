@@ -41,7 +41,7 @@ font-2 = FontAwesome:pixelsize=9;1
 
 modules-left = i3 ip ping
 modules-center = cpu memory 
-modules-right = packages uptime filesystem dates battery
+modules-right = kernel packages uptime filesystem dates battery
 
 tray-position = right
 tray-padding = 2
@@ -112,6 +112,21 @@ label = %output%
 format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 format-prefix-background = ${colors.background}
+
+
+#   |-----------------------|
+#   |       Kernel			|
+#   |-----------------------|
+
+[module/kernel]
+type = custom/script
+exec = sh ~/.config/polybar/scripts/kernel.sh
+interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
+
 
 #   |-----------------------|
 #   |       Packages		|
