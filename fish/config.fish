@@ -157,5 +157,4 @@ alias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
 # sudo ip route add default via <gateway> dev <interface>
 
 # Things I need to remember
-alias lpi="echo LPI000525263"
 alias token="cat ~/.info/token.pgp"
