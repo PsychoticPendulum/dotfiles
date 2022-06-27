@@ -118,8 +118,8 @@ for_window [class="VirtualBox*"] move to workspace $7
 mode "resize" {
 	bindsym Right resize grow width 5 px or 5 ppt
 	bindsym Left resize shrink width 5 px or 5 ppt
-	bindsym Up resize grow width 5 px or 5 ppt
-	bindsym Down resize shrink width 5 px or 5 ppt
+	bindsym Up resize grow height 5 px or 5 ppt
+	bindsym Down resize shrink height 5 px or 5 ppt
 
 	bindsym Return mode "default"
 	bindsym Escape mode "default"
@@ -166,7 +166,7 @@ bindsym $mod+shift+c exec code
 #	|-----------------------|
 
 #	Picom
-exec_always picom --config ~/.config/picom/picom.conf
+exec_always picom --config ~/.config/picom/picom.conf --experimental-backends
 
 #	Polybar
 exec_always --no-startup-id "sh /home/$USER/.config/polybar/launch.sh"	

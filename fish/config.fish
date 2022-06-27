@@ -83,9 +83,6 @@ function fish_prompt
 		echo -n "]"
 		set_color 0f0
 	end
-	
-	set_color ae0
-	echo "~ "
 end
 
 # Greeting
@@ -110,7 +107,7 @@ alias polyc="vim ~/.config/polybar/config"
 alias themec="cd ~/Developer/.scripts/themes"
 
 # Better Shell
-alias cls="cd ; clear ; nfetch && loaf.py"
+alias cls="cd ; clear ; nfetch"
 alias cs="clear ; colorscript random"
 alias c="clear ; cd"
 alias q="clear"
