@@ -1,4 +1,4 @@
-; vim:set ft=dosini:
+		; vim:set ft=dosini:
 
 #   |-----------------------|
 #   |       Includes        |
@@ -39,7 +39,7 @@ font-0 = Source Code Pro:pixelsize=9;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FontAwesome:pixelsize=9;1
 
-modules-left = i3 ip ping
+modules-left = i3 ping ip vpn
 modules-center = cpu memory 
 modules-right = kernel packages uptime filesystem dates battery
 
@@ -84,6 +84,20 @@ label-visible-padding = 1
 label-urgent = %name%
 label-urgent-background = ${colors.alert}
 label-urgent-padding = 1
+
+
+#   |-----------------------|
+#   |       VPN				|
+#   |-----------------------|
+
+[module/vpn]
+type = custom/script
+exec = sh ~/.config/polybar/scripts/vpn.sh
+interval = 1
+label = %output%
+format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
 
 
 #   |-----------------------|
