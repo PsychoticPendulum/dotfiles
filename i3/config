@@ -154,7 +154,7 @@ bindsym $alt+shift+b exec brave
 
 #	Chat
 bindsym $mod+shift+s exec signal-desktop
-bindsym $mod+shift+z exec element-desktop
+bindsym $mod+shift+y exec element-desktop
 
 #	GUI Applications
 bindsym $mod+shift+g exec gimp
