@@ -99,7 +99,6 @@ format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 format-prefix-background = ${colors.background}
 
-
 #   |-----------------------|
 #   |       IPv4			|
 #   |-----------------------|
