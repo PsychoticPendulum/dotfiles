@@ -14,9 +14,9 @@ alias :P="figlet :P"
 
 # Config Shortcuts
 alias scriptc="cd ~/Developer/.scripts/"
-alias fishc="vim ~/.config/fish/config.fish"
-alias i3c="vim ~/.config/i3/config"
-alias polyc="vim ~/.config/polybar/config"
+alias fishc="cd ~/.config/fish/"
+alias i3c="cd ~/.config/i3"
+alias polyc="cd ~/.config/polybar"
 alias themec="cd ~/Developer/.scripts/themes"
 
 # Better Shell
