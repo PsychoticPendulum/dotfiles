@@ -13,6 +13,8 @@ elif [[ $BASE -gt 100 ]]; then
 	COLOR="%{F#ff8800}"
 elif [[ $BASE -gt 30 ]]; then
 	COLOR="%{F#ffff00}"
+elif [[ $BASE -gt 10 ]]; then
+	COLOR="%{F#80ff00}"
 fi
 
 echo $COLOR $PING
