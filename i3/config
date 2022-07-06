@@ -137,8 +137,7 @@ set $TERMINAL kitty
 bindsym $mod+Return exec kitty
 bindsym $alt+Return exec xfce4-terminal
 
-bindsym $alt+l exec 'setxkbmap de'
-bindsym $alt+Shift+l exec 'setxkbmap en_US'
+bindsym $mod+shift+l exec "/home/lukas/Developer/.scripts/keymap.sh"
 
 #	Lock
 bindsym $mod+l exec i3lock -i ~/Wallpapers/lock.png -c 000000
