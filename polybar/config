@@ -41,7 +41,7 @@ font-2 = FontAwesome:pixelsize=9;1
 
 modules-left = i3 ping ip vpn
 modules-center = cpu memory 
-modules-right = kernel packages uptime filesystem dates battery
+modules-right = kblayout ackages uptime filesystem dates battery
 
 tray-position = right
 tray-padding = 2
@@ -123,6 +123,20 @@ exec = sh ~/.config/polybar/scripts/ping.sh
 interval = 1
 label = %output%
 format-prefix = " "
+format-prefix-foreground = ${colors.primary}
+format-prefix-background = ${colors.background}
+
+
+#   |-----------------------|
+#   |       KBLayout		|
+#   |-----------------------|
+
+[module/kblayout]
+type = custom/script
+exec = sh ~/.config/polybar/scripts/layout.sh
+interval = 1
+label = %output%
+format-prefix = " "
 format-prefix-foreground = ${colors.primary}
 format-prefix-background = ${colors.background}
 
