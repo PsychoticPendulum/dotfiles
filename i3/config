@@ -1,5 +1,5 @@
 #	i3 Config by PsychicPenguin
-#	Last Update June 22 2022
+#	Last Update July 16 2022
 
 #	|-----------------------|
 #	|		Includes		|
@@ -110,6 +110,11 @@ for_window [class="Signal"] move to workspace $4
 for_window [class="Element"] move to workspace $4
 for_window [class="Atril"] move to workspace $6
 for_window [class="VirtualBox*"] move to workspace $7
+for_window [class="Connman-gtk"] move to workspace $0
+
+for_window [class="Xfce4-appfinder" instance="xfce4-appfinder"] floating enable
+for_window [class="Lxappearance" instance="lxappearance"] floating enable
+
 
 #	|-----------------------|
 #	|		Resize			|
@@ -147,7 +152,8 @@ bindsym $mod+l exec i3lock -i ~/Wallpapers/lock.png -c 000000
 bindsym $mod+shift+p exec xfce4-screenshooter
 
 #	Rofi
-bindsym $mod+d exec rofi -show drun -lines 23 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+# bindsym $mod+d exec rofi -show drun -lines 23 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+bindsym $mod+d exec xfce4-appfinder
 bindsym $mod+shift+d exec rofi -show run -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/Arc-Dark.rasi"
 
 #	Browser
