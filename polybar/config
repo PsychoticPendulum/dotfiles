@@ -12,6 +12,7 @@ include-file = /home/$USER/.config/polybar/colorscheme
 #   |       Bars			|
 #   |-----------------------|
 
+
 [bar/bar1]
 monitor =${env:MONITOR:}
 width = 100%
