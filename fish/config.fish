@@ -146,7 +146,6 @@ alias cös="cls"
 # Network
 alias snf="sudo python3 ~/Developer/.scripts/sniffer.py"
 alias pg="ping -c 4 8.8.8.8"
-alias nasty="sudo mount -t nfs 192.168.178.24:/nasty /mnt/NAS"
 
 # Gaming
 alias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
