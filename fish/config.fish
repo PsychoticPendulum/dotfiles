@@ -154,3 +154,4 @@ alias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
 
 # Things I need to remember
 alias token="cat ~/.info/token.pgp"
+alias nasty="sudo mount -t nfs 192.168.4.23:/nasty /mnt/NAS/"
