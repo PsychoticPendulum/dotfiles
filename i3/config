@@ -113,6 +113,8 @@ for_window [class="Atril"] move to workspace $6
 for_window [class="VirtualBox*"] move to workspace $7
 for_window [class="Connman-gtk"] move to workspace $0
 
+for_window [class="Synergy" instance="synergy"] move to workspace $0
+
 for_window [class="Blueman-applet" instance="blueman-applet"] kill; exec notify-send Keyboard "Keyboard State Changed"
 
 for_window [class="Xfce4-appfinder" instance="xfce4-appfinder"] floating enable
@@ -180,6 +182,8 @@ exec_always picom --config ~/.config/picom/picom.conf --experimental-backends
 
 #	Polybar
 exec_always --no-startup-id "sh /home/$USER/.config/polybar/launch.sh"	
+
+exec_always --no-startup-id "sh /home/$USER/Developer/.scripts/synergy.sh"
 
 #	Init
 exec kitty "/home/$USER/Developer/.scripts/boot.sh"
