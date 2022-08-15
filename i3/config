@@ -113,7 +113,7 @@ for_window [class="Atril"] move to workspace $6
 for_window [class="VirtualBox*"] move to workspace $7
 for_window [class="Connman-gtk"] move to workspace $0
 
-for_window [class="Blueman-applet" instance="blueman-applet"] kill 
+for_window [class="Blueman-applet" instance="blueman-applet"] kill; exec notify-send Keyboard "Keyboard State Changed"
 
 for_window [class="Xfce4-appfinder" instance="xfce4-appfinder"] floating enable
 for_window [class="Lxappearance" instance="lxappearance"] floating enable
