@@ -105,18 +105,18 @@ for_window [class="brave"] move to workspace $2
 for_window [class="SimpleScreenRecorder"] move to workspace $3
 for_window [class="kdenlive"] move to workspace $3
 for_window [class="mpv"] move to workspace $3
-for_window [class="gimp"] move to workspace $3
+for_window [class="Gimp"] move to workspace $3
 for_window [class="Signal"] move to workspace $4
 for_window [class="Element"] move to workspace $4
 for_window [class="Steam"] move to workspace $5
 for_window [class="Atril"] move to workspace $6
 for_window [class="VirtualBox*"] move to workspace $7
 for_window [class="Connman-gtk"] move to workspace $0
-for_window [class="Blueman-applet" instance="blueman-applet"] move to workspace $5 
+
+for_window [class="Blueman-applet" instance="blueman-applet"] kill 
 
 for_window [class="Xfce4-appfinder" instance="xfce4-appfinder"] floating enable
 for_window [class="Lxappearance" instance="lxappearance"] floating enable
-
 
 #	|-----------------------|
 #	|		Resize			|
