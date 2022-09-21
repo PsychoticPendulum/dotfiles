@@ -1,6 +1,6 @@
 #! /bin/bash
 
-PING=$(ping -qc1 google.com 2>&1 | awk -F'/' 'END{ print (/^rtt/? ""$5"":"DOWN") }')
+PING=$(ping -qc1 8.8.8.8 2>&1 | awk -F'/' 'END{ print (/^rtt/? ""$5"":"DOWN") }')
 
 BASE=${PING::-4}
 COLOR="%{F#00ff00}"
