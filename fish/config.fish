@@ -109,7 +109,7 @@ alias themec="cd ~/Developer/.scripts/themes"
 # Better Shell
 alias :wq="i3 kill"
 alias :q="i3 kill"
-alias cls="cd ; clear ; nfetch ; python -c \"from PyTerm import * ; print(f'{UTIL.UP}{UTIL.UP}',end='')\" ; l"
+alias cls="cd ; clear ; nfetch"
 alias cs="clear ; colorscript random"
 alias c="clear ; cd"
 alias q="clear"
