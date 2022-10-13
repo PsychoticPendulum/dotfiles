@@ -42,7 +42,7 @@ font-2 = FontAwesome:pixelsize=9;1
 
 modules-left = i3 ping ip vpn
 modules-center = cpu memory 
-modules-right = kblayout packages uptime filesystem dates battery
+modules-right = kernel kblayout packages uptime filesystem dates battery
 
 tray-position = right
 tray-padding = 2
