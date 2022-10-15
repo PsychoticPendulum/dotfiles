@@ -118,7 +118,7 @@ for_window [class="mpv"] move to workspace $3
 for_window [class="Gimp"] move to workspace $3
 for_window [class="Signal"] move to workspace $4
 for_window [class="Element"] move to workspace $4
-for_window [class="Steam"] move to workspace $5
+for_window [class="Steam" instance="Steam"] move to workspace $5
 for_window [class="Atril"] move to workspace $6
 for_window [class="VirtualBox*"] move to workspace $7
 for_window [class="Connman-gtk"] move to workspace $0
@@ -183,6 +183,7 @@ bindsym $mod+shift+y exec element-desktop
 bindsym $mod+shift+g exec gimp
 bindsym $mod+shift+a exec pcmanfm
 bindsym $mod+shift+c exec code
+bindsym $mod+shift+x exec steam
 
 #	|-----------------------|
 #	|		Autostart		|
