@@ -1,3 +1,3 @@
 #! /bin/bash
 
-uname -r | sed s/'-arch1-1'/''/g
+uname -r | sed s/'-arch[0-9]-[0-9]'/''/g
