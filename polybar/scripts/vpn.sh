@@ -5,3 +5,4 @@ if ip addr | grep tun > /dev/null; then
 	exit
 fi
 echo '%{F#ff0000}Inactive'
+ps -aux | grep 'torrent' | awk '{print $2}' | xargs kill
