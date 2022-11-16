@@ -190,7 +190,7 @@ bindsym $mod+shift+x exec steam
 #	|-----------------------|
 
 #	Picom
-exec_always picom --config ~/.config/picom/picom.conf --experimental-backends
+exec_always picom --config ~/.config/picom/picom.conf
 
 #	Polybar
 exec_always --no-startup-id "sh /home/$USER/.config/polybar/launch.sh"	
