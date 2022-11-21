@@ -5,5 +5,5 @@ if ip addr | grep tun > /dev/null; then
 	exit
 else
 	echo '%{F#ff0000}Inactive'
-	ps -aux | grep 'torrent' | awk '{print $2}' | xargs kill
+	# ps -aux | grep 'torrent' | awk '{print $2}' | xargs kill
 fi
