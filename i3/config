@@ -15,6 +15,7 @@ include /home/$USER/.config/i3/style
 #	Mod Key
 set $mod Mod4
 set $alt Mod1
+set $altgr Mod2
 
 bindsym $mod+shift+q kill
 bindsym $mod+shift+r restart
@@ -67,68 +68,115 @@ bindsym $mod+shift+space floating toggle
 #	|		Workspaces		|
 #	|-----------------------|
 
-set $1 "1."                                       
-set $2 "2."                                       
-set $3 "3."                                          
-set $4 "4."                                           
-set $5 "5."                                           
-set $6 "6."                                         
-set $7 "7."                                             
-set $8 "8."                                         
-set $9 "9."                                           
-set $0 "10." 
+set $1 1
+set $2 2
+set $3 3
+set $4 4
+set $5 5
+set $6 6
+set $7 7
+set $8 8
+set $9 9
+set $0 10
 
-bindsym $mod+1 workspace $1
-bindsym $mod+2 workspace $2
-bindsym $mod+3 workspace $3
-bindsym $mod+4 workspace $4
-bindsym $mod+5 workspace $5
-bindsym $mod+6 workspace $6
-bindsym $mod+7 workspace $7
-bindsym $mod+8 workspace $8
-bindsym $mod+9 workspace $9
-bindsym $mod+0 workspace $0
-bindsym $mod+F1 workspace $6
-bindsym $mod+F2 workspace $7
-bindsym $mod+F3 workspace $8
-bindsym $mod+F4 workspace $9
-bindsym $mod+F5 workspace $0
+bindsym $mod+1 exec i3wsmgr-msg ws switch "$1"
+bindsym $mod+2 exec i3wsmgr-msg ws switch "$2"
+bindsym $mod+3 exec i3wsmgr-msg ws switch "$3"
+bindsym $mod+4 exec i3wsmgr-msg ws switch "$4"
+bindsym $mod+5 exec i3wsmgr-msg ws switch "$5"
+bindsym $mod+6 exec i3wsmgr-msg ws switch "$6"
+bindsym $mod+7 exec i3wsmgr-msg ws switch "$7"
+bindsym $mod+8 exec i3wsmgr-msg ws switch "$8"
+bindsym $mod+9 exec i3wsmgr-msg ws switch "$9"
+bindsym $mod+0 exec i3wsmgr-msg ws switch "$0"
+bindsym $mod+F1 exec i3wsmgr-msg ws switch "$6"
+bindsym $mod+F2 exec i3wsmgr-msg ws switch "$7"
+bindsym $mod+F3 exec i3wsmgr-msg ws switch "$8"
+bindsym $mod+F4 exec i3wsmgr-msg ws switch "$9"
+bindsym $mod+F5 exec i3wsmgr-msg ws switch "$0"
 
-bindsym $mod+shift+1 move container to workspace $1
-bindsym $mod+shift+2 move container to workspace $2
-bindsym $mod+shift+3 move container to workspace $3
-bindsym $mod+shift+4 move container to workspace $4
-bindsym $mod+shift+5 move container to workspace $5
-bindsym $mod+shift+6 move container to workspace $6
-bindsym $mod+shift+7 move container to workspace $7
-bindsym $mod+shift+8 move container to workspace $8
-bindsym $mod+shift+9 move container to workspace $9
-bindsym $mod+shift+0 move container to workspace $0
-bindsym $mod+shift+F1 move container to workspace $6
-bindsym $mod+shift+F2 move container to workspace $7
-bindsym $mod+shift+F3 move container to workspace $8
-bindsym $mod+shift+F4 move container to workspace $9
-bindsym $mod+shift+F5 move container to workspace $0
+bindsym $mod+shift+1 exec i3wsmgr-msg ws move "$1"
+bindsym $mod+shift+2 exec i3wsmgr-msg ws move "$2"
+bindsym $mod+shift+3 exec i3wsmgr-msg ws move "$3"
+bindsym $mod+shift+4 exec i3wsmgr-msg ws move "$4"
+bindsym $mod+shift+5 exec i3wsmgr-msg ws move "$5"
+bindsym $mod+shift+6 exec i3wsmgr-msg ws move "$6"
+bindsym $mod+shift+7 exec i3wsmgr-msg ws move "$7"
+bindsym $mod+shift+8 exec i3wsmgr-msg ws move "$8"
+bindsym $mod+shift+9 exec i3wsmgr-msg ws move "$9"
+bindsym $mod+shift+0 exec i3wsmgr-msg ws move "$0"
+bindsym $mod+shift+F1 exec i3wsmgr-msg ws move "$6"
+bindsym $mod+shift+F2 exec i3wsmgr-msg ws move "$7"
+bindsym $mod+shift+F3 exec i3wsmgr-msg ws move "$8"
+bindsym $mod+shift+F4 exec i3wsmgr-msg ws move "$9"
+bindsym $mod+shift+F5 exec i3wsmgr-msg ws move "$0"
 
-for_window [class="firefox"] move to workspace $2
-for_window [class="brave"] move to workspace $2
-for_window [class="SimpleScreenRecorder"] move to workspace $3
-for_window [class="kdenlive"] move to workspace $3
-for_window [class="mpv"] move to workspace $3
-for_window [class="Gimp"] move to workspace $3
-for_window [class="Signal"] move to workspace $4
-for_window [class="Element"] move to workspace $4
-for_window [class="Steam" instance="Steam"] move to workspace $5
-for_window [class="Atril"] move to workspace $6
-for_window [class="VirtualBox*"] move to workspace $7
-for_window [class="Connman-gtk"] move to workspace $0
+# static workspace output pins
+workspace 0:$1 output eDP-1
 
-for_window [class="Synergy" instance="synergy"] move to workspace $0
+# Subworkspaces
+bindsym $altgr+i exec i3wsmgr-msg ws subwsrecords ignore toggle
 
-for_window [class="Blueman-applet" instance="blueman-applet"] kill; exec notify-send Keyboard "Keyboard State Changed"
+bindsym $altgr+j exec i3wsmgr-msg subws switch 0
+bindsym $altgr+k exec i3wsmgr-msg subws switch 1
+bindsym $altgr+l exec i3wsmgr-msg subws switch 2
 
-for_window [class="Xfce4-appfinder" instance="xfce4-appfinder"] floating enable
-for_window [class="Lxappearance" instance="lxappearance"] floating enable
+bindsym $altgr+shift+j exec i3wsmgr-msg subws move 0
+bindsym $altgr+shift+k exec i3wsmgr-msg subws move 1
+bindsym $altgr+shift+l exec i3wsmgr-msg subws move 2
+# Group control (activation, clear...)
+mode "groupctl" {
+  # group activation
+  bindsym a exec i3wsmgr-msg group activate a; mode "default"
+  bindsym b exec i3wsmgr-msg group activate b; mode "default"
+  bindsym c exec i3wsmgr-msg group activate c; mode "default"
+  bindsym d exec i3wsmgr-msg group activate d; mode "default"
+  bindsym e exec i3wsmgr-msg group activate e; mode "default"
+  bindsym f exec i3wsmgr-msg group activate f; mode "default"
+  bindsym g exec i3wsmgr-msg group activate g; mode "default"
+  bindsym h exec i3wsmgr-msg group activate h; mode "default"
+  bindsym i exec i3wsmgr-msg group activate i; mode "default"
+  bindsym j exec i3wsmgr-msg group activate j; mode "default"
+  bindsym k exec i3wsmgr-msg group activate k; mode "default"
+  bindsym l exec i3wsmgr-msg group activate l; mode "default"
+  bindsym m exec i3wsmgr-msg group activate m; mode "default"
+  bindsym n exec i3wsmgr-msg group activate n; mode "default"
+  bindsym o exec i3wsmgr-msg group activate o; mode "default"
+  bindsym p exec i3wsmgr-msg group activate p; mode "default"
+  bindsym q exec i3wsmgr-msg group activate q; mode "default"
+  bindsym r exec i3wsmgr-msg group activate r; mode "default"
+  bindsym s exec i3wsmgr-msg group activate s; mode "default"
+  bindsym t exec i3wsmgr-msg group activate t; mode "default"
+  bindsym u exec i3wsmgr-msg group activate u; mode "default"
+  bindsym v exec i3wsmgr-msg group activate v; mode "default"
+  bindsym w exec i3wsmgr-msg group activate w; mode "default"
+  bindsym x exec i3wsmgr-msg group activate x; mode "default"
+  bindsym y exec i3wsmgr-msg group activate y; mode "default"
+  bindsym z exec i3wsmgr-msg group activate z; mode "default"
+
+  # Clear the active group from all workspaces
+  bindsym Delete       exec i3wsmgr-msg group clear active; mode "default"
+  # Clear all groups from all workspaces
+  bindsym Shift+Delete exec i3wsmgr-msg group clear all;    mode "default"
+
+  bindsym Escape mode "default"
+  bindsym $mod+g mode "default"
+}
+bindsym $mod+g mode "groupctl"
+bindsym $altgr+g exec i3wsmgr-msg group toggle
+bindsym $altgr+n exec i3wsmgr-msg group switch rel left
+bindsym $altgr+m exec i3wsmgr-msg group switch rel right
+
+assign [class="firefox"] → number 10:$2
+assign [class="brave"] → number 10:$2
+assign [class="SimpleScreenRecorder"] → number 20:$3
+assign [class="kdenlive"] → number 20:$3
+assign [class="mpv"] → number 20:$3
+assign [class="Gimp"] → number 20:$3
+assign [class="Signal"] → number 30:$4
+assign [class="Element"] → number 30:$4
+assign [class="Steam" instance="Steam"] → number 40:$5
+assign [class="VirtualBox*"] → number 60:$7
 
 #	|-----------------------|
 #	|		Resize			|
@@ -167,9 +215,10 @@ bindsym $mod+l exec i3lock -i ~/Wallpapers/lock.png -c 000000
 bindsym $mod+shift+p exec xfce4-screenshooter
 
 #	Rofi
-# bindsym $mod+d exec rofi -show drun -lines 23 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/Arc-Dark.rasi"
-bindsym $mod+d exec xfce4-appfinder
-bindsym $mod+shift+d exec rofi -show run -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/Arc-Dark.rasi"
+bindsym $mod+d exec rofi -show drun -lines 23 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/spotlight.rasi"
+# bindsym $mod+d exec xfce4-appfinder
+bindsym $mod+shift+d exec rofi -show run -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/spotlight.rasi"
+bindsym $mod+shift+w exec rofi -show window -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/spotlight.rasi"
 
 #	Browser
 bindsym $mod+shift+f exec firefox
@@ -199,3 +248,6 @@ exec_always --no-startup-id "sh /home/$USER/Developer/.scripts/synergy.sh"
 
 #	Init
 exec kitty "/home/$USER/Developer/.scripts/boot.sh"
+
+exec_always "killall i3wsmgr; i3wsmgr | systemd-cat -t i3wsmgr"
+exec_always "xmodmap /etc/xmodmap.conf"
