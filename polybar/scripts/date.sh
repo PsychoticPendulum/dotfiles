@@ -1,5 +1,5 @@
 #! /bin/bash
 
-date=$(date +%c)
+date=$(date +"%V %c")
 date=${date::-4}
-echo $date
+echo CW $date
