@@ -116,6 +116,7 @@ bindsym $mod+shift+Tab workspace prev_on_output
 
 # static workspace output pins
 workspace 0:$1 output eDP-1
+workspace 2000:$2 output DP-1-8
 
 # Subworkspaces
 bindsym $altgr+i exec i3wsmgr-msg ws subwsrecords ignore toggle

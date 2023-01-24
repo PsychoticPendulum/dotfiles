@@ -4,6 +4,9 @@ outputs:
     - name: "laptop"
       output: "eDP-1"
       prefix: 1000
+    - name: "thinkvision"
+      output: "DP-1-8"
+      prefix: 1000
 
 static_workspaces:
     - display_name: "1"
