@@ -5,6 +5,9 @@ export EDITOR="vim"
 export SHELL="fish"
 export GOPATH=$HOME/Developer/GO/ENV/
 
+QT_STYLE_OVERIDE=GTK+
+QT_QPA_PLATFORMTHEME=gtk2
+
 LPIID="LPI000525263"
 
 fish
