@@ -1,0 +1,43 @@
+[KFileDialog Settings]
+Recent Files[$e]=file:$HOME/Wallpapers/585504.jpg,file:$HOME/Wallpapers/ArtixPlasmaPure.png,file:$HOME/Wallpapers/ArtixBlur.png,file:$HOME/Wallpapers/ArchWindows.png,file:$HOME/Wallpapers/ArchPlasmaPure.png,file:$HOME/Wallpapers/ArchMatrix.png,file:$HOME/Wallpapers/ArchBlue4k.png,file:$HOME/Wallpapers/AndroidMountains.jpg,file:$HOME/Wallpapers/AndroidMountains_Blur.jpg,file:$HOME/Wallpapers/AndroidMountains_Blue.jpg,file:$HOME/Wallpapers/adwaita-d.jpg,file:$HOME/Wallpapers/Ace.png,file:$HOME/Wallpapers/Abstract-Wallpaper-HD.png,file:$HOME/Wallpapers/660838.jpg,file:$HOME/Wallpapers/585504.jpg,file:$HOME/Wallpapers/327429-abstract-colorful-620833226.jpg
+Recent URLs[$e]=file:$HOME/Wallpapers/
+detailViewIconSize=16
+
+[PlasmaViews][Panel 2]
+alignment=132
+floating=1
+panelOpacity=2
+panelVisibility=0
+
+[PlasmaViews][Panel 2][Defaults]
+maxLength=1920
+minLength=1280
+thickness=32
+
+[PlasmaViews][Panel 2][Horizontal1920]
+maxLength=1920
+minLength=1280
+thickness=32
+
+[PlasmaViews][Panel 2][Vertical1080]
+maxLength=1080
+minLength=516
+thickness=32
+
+[PlasmaViews][Panel 52]
+alignment=132
+floating=1
+
+[PlasmaViews][Panel 52][Defaults]
+thickness=32
+
+[PlasmaViews][Panel 52][Horizontal1920]
+thickness=32
+
+[ScreenConnectors]
+0=eDP-1
+1=DP-1-2
+2=DP-1-3
+
+[Updates]
+performed=/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/systemloadviewer_systemmonitor.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/klipper_clear_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_migrate_font_settings.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/unlock_widgets.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_remove_shortcut.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/containmentactions_middlebutton.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/maintain_existing_desktop_icon_sizes.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/keyboardlayout_migrateiconsetting.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/no_middle_click_paste_on_panels.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/move_desktop_layout_config.js,/usr/share/plasma/shells/org.kde.plasma.desktop/contents/updates/digitalclock_rename_timezonedisplay_key.js
