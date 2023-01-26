@@ -145,3 +145,4 @@ alias gdr="rclone mount --daemon gdr: /mnt/share/GoogleDrive"
 # Start X Sessions
 alias skde="startx /bin/startplasma-x11"
 alias si3="startx /bin/i3"
+alias logout="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
