@@ -208,9 +208,9 @@ immutability=1
 plugin=org.kde.plasma.kickoff
 
 [Containments][52][Applets][53][Configuration]
-PreloadWeight=89
-popupHeight=465
-popupWidth=922
+PreloadWeight=94
+popupHeight=962
+popupWidth=607
 
 [Containments][52][Applets][53][Configuration][ConfigDialog]
 DialogHeight=540
@@ -254,7 +254,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][52][Applets][57][Configuration]
-PreloadWeight=43
+PreloadWeight=48
 SystrayContainmentId=58
 
 [Containments][52][Applets][72]
@@ -288,7 +288,7 @@ immutability=1
 lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
-popupHeight=464
+popupHeight=720
 popupWidth=922
 wallpaperplugin=org.kde.image
 
@@ -325,7 +325,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][58][Applets][63][Configuration]
-PreloadWeight=18
+PreloadWeight=23
 
 [Containments][58][Applets][64]
 immutability=1
@@ -375,17 +375,6 @@ PreloadWeight=18
 [Containments][58][General]
 extraItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard
 knownItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard
-
-[Containments][74]
-ItemGeometries-0x0=
-ItemGeometriesHorizontal=
-activityId=00000000-0000-0000-0000-000000000000
-formfactor=0
-immutability=1
-lastScreen=0
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
 
 [Containments][8]
 activityId=
@@ -491,4 +480,4 @@ knownItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde
 
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Screenshot_2023-01-26_15-18-53.png,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Screenshot_2023-01-26_15-19-27.png,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1
+screenMapping=desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Shame.flac,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/10 Shame.m4a,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1
