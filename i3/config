@@ -189,6 +189,7 @@ assign [class="Signal"] → number 30:$4
 assign [class="Element"] → number 30:$4
 assign [class="Steam" instance="Steam"] → number 40:$5
 assign [class="VirtualBox*"] → number 60:$7
+assign [class="plasmashell"] → number 90:info
 
 #	|-----------------------|
 #	|		Plasma			|
@@ -275,4 +276,5 @@ exec_always --no-startup-id "sh /home/$USER/Developer/.scripts/synergy.sh"
 exec kitty "/home/$USER/Developer/.scripts/boot.sh"
 
 exec_always "killall i3wsmgr; i3wsmgr | systemd-cat -t i3wsmgr"
+exec_always "notify-send '$(~/Developer/.scripts/keymod.sh)'"
 exec_always "xmodmap /etc/xmodmap.conf"
