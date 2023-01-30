@@ -189,7 +189,6 @@ assign [class="Signal"] → number 30:$4
 assign [class="Element"] → number 30:$4
 assign [class="Steam" instance="Steam"] → number 40:$5
 assign [class="VirtualBox*"] → number 60:$7
-assign [class="plasmashell"] → number 90:info
 
 #	|-----------------------|
 #	|		Plasma			|
