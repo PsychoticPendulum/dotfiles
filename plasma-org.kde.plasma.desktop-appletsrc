@@ -338,6 +338,9 @@ plugin=org.kde.plasma.volume
 [Containments][58][Applets][63][Configuration]
 PreloadWeight=7
 
+[Containments][58][Applets][63][Configuration][General]
+globalMute=true
+
 [Containments][58][Applets][64]
 immutability=1
 plugin=org.kde.plasma.manage-inputmethod
