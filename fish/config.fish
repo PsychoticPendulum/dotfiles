@@ -56,9 +56,18 @@ function fish_prompt
 	set --local repo "$ls .git"
 	set --local user $(echo -n $USER)
 
-	set_color 6f0
-	echo -n "$user "
 	set_color 0f0
+	echo -n "["
+	set_color 80f
+	echo -n "$user"
+	set_color ff0
+	echo -n "@"
+	set_color 40f
+	echo -n "$hostname"
+	set_color 0f0
+	echo -n "] "
+
+	set_color ff0
 	echo -n " "
 
 	if string match -e -q $outside $full_directory
@@ -68,7 +77,12 @@ function fish_prompt
 	else
 		set_color 6f0
 	end
-	echo -n " $directory/"
+	set_color 0f0
+	echo -n "["
+	set_color 0cf
+	echo -n "$directory/"
+	set_color 0f0
+	echo -n "]"
 	set_color fff
 	printf '%s ' (__fish_git_prompt)	
 	echo ""
