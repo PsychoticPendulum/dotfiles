@@ -1,6 +1,6 @@
 #!usr/bin/env bash
 
-killall -q polybar
+kill $(ps -aux | grep "polybar --reload bar1" | awk '{print $2}')
 
 if type "xrandr"; then
 	for m in $(xrandr --query | grep " connected" | cut -d" " -f1); do
