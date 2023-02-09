@@ -80,7 +80,7 @@ function fish_prompt
 	set_color 0f0
 	echo -n "["
 	set_color 0cf
-	echo -n "$directory/"
+	echo -n "$directory"
 	set_color 0f0
 	echo -n "]"
 	set_color fff
