@@ -70,16 +70,15 @@ function fish_prompt
 	set_color ff0
 	echo -n " "
 
-	if string match -e -q $outside $full_directory
-		set_color 0ff
-	else if string match -q "/" $full_directory
-		set_color f00
-	else
-		set_color 6f0
-	end
 	set_color 0f0
 	echo -n "["
-	set_color 0cf
+	if string match -e -q $outside $full_directory
+		set_color 08f
+	else if string match -q "/" $full_directory
+		set_color 800
+	else
+		set_color 0f8
+	end
 	echo -n "$directory"
 	set_color 0f0
 	echo -n "]"
