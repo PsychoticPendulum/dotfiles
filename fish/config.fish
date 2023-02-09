@@ -123,7 +123,7 @@ alias themec="cd ~/Developer/.scripts/themes"
 # Better Shell
 alias :wq="i3 kill"
 alias :q="i3 kill"
-alias cls="cd ; clear ; nfetch"
+alias cls="cd ; clear ; /home/$USER/Developer/.scripts/neofetch.sh"
 alias c="clear ; cd"
 alias q="clear"
 alias ll="lsd -Alh"
