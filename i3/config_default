@@ -113,7 +113,7 @@ bindsym $mod+shift+F5 move container to workspace $0
 bindsym $mod+Tab workspace next_on_output
 bindsym $mod+shift+Tab workspace prev_on_output
 
-for_window [class="Mozilla Firefox"] move to workspace $2
+for_window [class="Firefox" instance="Navigator"] move to workspace $2
 for_window [class="brave"] move to workspace $2
 for_window [class="SimpleScreenRecorder"] move to workspace $3
 for_window [class="kdenlive"] move to workspace $3
