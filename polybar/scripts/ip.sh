@@ -1,6 +1,6 @@
 #! /bin/bash
 
-IP=$(ip -4 -o addr show | grep tun || ip -4 -o addr show | grep eth || ip -4 -o addr show | grep enp || ip -4 -o addr show | grep wlan || ip -4 -o addr show | grep lo)
+IP=$(ip -4 -o addr show | grep tun || ip -4 -o addr show | grep eth || ip -4 -o addr show | grep enp || ip -4 -o addr show | grep wl || ip -4 -o addr show | grep lo)
 DEV=$(echo $IP | awk '{print $2}')
 IP=$(echo $IP | awk '{print $4}')
 echo -n "$DEV: "
