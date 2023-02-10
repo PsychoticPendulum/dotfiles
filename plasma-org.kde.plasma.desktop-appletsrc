@@ -8,6 +8,7 @@ RightButton;NoModifier=org.kde.contextmenu
 [Containments][1]
 ItemGeometries-160x160=
 ItemGeometries-1920x1080=
+ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
 ItemGeometriesVertical=
 activityId=e599b4bb-74e5-478e-b716-70719c34c2b1
@@ -493,6 +494,17 @@ PreloadWeight=0
 extraItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard
 knownItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard
 
+[Containments][83]
+ItemGeometries-2560x1440=
+ItemGeometriesHorizontal=
+activityId=e599b4bb-74e5-478e-b716-70719c34c2b1
+formfactor=0
+immutability=1
+lastScreen=3
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
 [ScreenMapping]
 itemsOnDisabledScreens=
-screenMapping=desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/E11_TradeFairs_grouppresentations_2FS413.pptx,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/notify-send,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1
+screenMapping=desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1
