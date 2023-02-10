@@ -1,8 +1,8 @@
 #! /bin/bash
 
-TOTAL=$(df / -h | awk '{print $4}' | tail -n 1)
-FREE=$(df / -h | awk '{print $3}' | tail -n 1)
-PERC=$(df / -h | awk '{print $5}' | tail -n 1)
+TOTAL=$(df /home -h | awk '{print $4}' | tail -n 1)
+FREE=$(df /home -h | awk '{print $3}' | tail -n 1)
+PERC=$(df /home -h | awk '{print $5}' | tail -n 1)
 PERC=${PERC::-1}
 
 COLOR="%{F#00ff00}"
