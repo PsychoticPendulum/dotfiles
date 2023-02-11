@@ -114,6 +114,7 @@ bindsym $mod+Tab workspace next_on_output
 bindsym $mod+shift+Tab workspace prev_on_output
 
 for_window [class="Firefox" instance="Navigator"] move to workspace $2
+for_window [class="Minecraft Launcher" instance="minecraft-launcher"] move to workspace $5
 for_window [class="brave"] move to workspace $2
 for_window [class="SimpleScreenRecorder"] move to workspace $3
 for_window [class="kdenlive"] move to workspace $3
@@ -201,6 +202,7 @@ bindsym $mod+shift+g exec gimp
 bindsym $mod+shift+a exec pcmanfm
 bindsym $mod+shift+c exec code
 bindsym $mod+shift+x exec steam
+bindsym $mod+shift+m exec minecraft-launcher
 
 #	|-----------------------|
 #	|		Autostart		|
