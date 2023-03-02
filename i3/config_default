@@ -1,12 +1,5 @@
 #	i3 Config by PsychicPenguin
-#	Last Update July 16 2022
-
-#	|-----------------------|
-#	|		Includes		|
-#	|-----------------------|
-
-include /home/$USER/.config/i3/colorscheme
-include /home/$USER/.config/i3/style
+#	Last Update March 2 2023
 
 #	|-----------------------|
 #	|		Handles  		|
@@ -14,7 +7,6 @@ include /home/$USER/.config/i3/style
 
 #	Mod Key
 set $mod Mod4
-set $alt Mod1
 
 bindsym $mod+shift+q kill
 bindsym $mod+shift+r restart
@@ -113,38 +105,15 @@ bindsym $mod+shift+F5 move container to workspace $0
 bindsym $mod+Tab workspace next_on_output
 bindsym $mod+shift+Tab workspace prev_on_output
 
+#	|-----------------------|
+#	|       App Rules		|
+#	|-----------------------|
+
 for_window [class="Firefox" instance="Navigator"] move to workspace $2
-for_window [class="Minecraft Launcher" instance="minecraft-launcher"] move to workspace $5
-for_window [class="brave"] move to workspace $2
-for_window [class="SimpleScreenRecorder"] move to workspace $3
-for_window [class="kdenlive"] move to workspace $3
 for_window [class="mpv"] move to workspace $3
 for_window [class="Gimp"] move to workspace $3
 for_window [class="Signal"] move to workspace $4
 for_window [class="Element"] move to workspace $4
-for_window [class="Steam" instance="Steam"] move to workspace $5
-for_window [class="Atril"] move to workspace $6
-for_window [class="VirtualBox*"] move to workspace $7
-for_window [class="Connman-gtk"] move to workspace $0
-
-for_window [class="Synergy" instance="synergy"] move to workspace $0
-
-for_window [class="Blueman-applet" instance="blueman-applet"] kill; exec notify-send Keyboard "Keyboard State Changed"
-
-for_window [class="Xfce4-appfinder" instance="xfce4-appfinder"] floating enable
-for_window [class="Lxappearance" instance="lxappearance"] floating enable
-
-#	|-----------------------|
-#	|		Plasma			|
-#	|-----------------------|
-
-# Plasma compatibility improvements
-for_window [window_role="pop-up"] floating enable
-for_window [window_role="task_dialog"] floating enable
-for_window [class="plasmashell"] floating disable;
-for_window [class="plasmashell" window_type="notification"] border none, move position 70 ppt 81 ppt
-no_focus [class="plasmashell" window_type="notification"]
-for_window [title="Desktop — Plasma"] kill; floating enable; border none
 
 #	|-----------------------|
 #	|		Resize			|
@@ -162,7 +131,6 @@ mode "resize" {
 }
 bindsym $mod+r mode "resize"
 
-
 #	|-----------------------|
 #	|		Hotkeys			|
 #	|-----------------------|
@@ -171,27 +139,18 @@ bindsym $mod+r mode "resize"
 set $TERMINAL kitty
 bindsym $mod+Return exec kitty
 bindsym $mod+Escape exec kitty
-bindsym $alt+Return exec xfce4-terminal
 
 #	Switch kb layout
-bindsym $mod+space exec "/home/$USER/Developer/.scripts/keymap.sh"
-
-#	Lock
-bindsym $mod+l exec "/home/$USER/Developer/.scripts/lock.sh"
+bindsym $mod+space exec "/home/$USER/.scripts/keymap.sh"
 
 #	Screenshot
 bindsym $mod+shift+p exec xfce4-screenshooter
 
 #	Rofi
-bindsym $mod+d exec rofi -show drun -lines 23 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/spotlight.rasi"
-# bindsym $mod+d exec xfce4-appfinder
-bindsym $mod+shift+d exec rofi -show run -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/spotlight.rasi"
-bindsym $mod+shift+w exec rofi -show window -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/spotlight.rasi"
-bindsym $alt+shift+s exec rofi -show screenlayout -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "/usr/share/rofi/themes/spotlight.rasi" -config ~/.config/rofi/modes/screenlayout.rasi
+bindsym $mod+d exec dmenu_run
 
 #	Browser
 bindsym $mod+shift+f exec firefox
-bindsym $alt+shift+b exec brave
 
 #	Chat
 bindsym $mod+shift+s exec signal-desktop
@@ -199,22 +158,13 @@ bindsym $mod+shift+y exec element-desktop
 
 #	GUI Applications
 bindsym $mod+shift+g exec gimp
-bindsym $mod+shift+a exec pcmanfm
-bindsym $mod+shift+c exec code
-bindsym $mod+shift+x exec steam
-bindsym $mod+shift+m exec minecraft-launcher
+
+bar {
+	status_command i3status
+}
 
 #	|-----------------------|
 #	|		Autostart		|
 #	|-----------------------|
 
-#	Picom
-exec_always picom --config ~/.config/picom/picom.conf
-
-#	Polybar
-exec_always --no-startup-id "sh /home/$USER/.config/polybar/launch.sh"	
-
-exec_always --no-startup-id "sh /home/$USER/Developer/.scripts/synergy.sh"
-
-#	Init
-exec kitty "/home/$USER/Developer/.scripts/boot.sh"
+exec_always "/home/$USER/.scripts/keymod.sh"
