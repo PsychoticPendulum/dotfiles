@@ -39,7 +39,7 @@ PreloadWeight=0
 
 [Containments][37][Applets][41]
 immutability=1
-plugin=org.kde.plasma.nightcolorcontrol
+plugin=org.kde.kscreen
 
 [Containments][37][Applets][41][Configuration]
 PreloadWeight=0
@@ -116,7 +116,14 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][37][Applets][84][Configuration]
-PreloadWeight=34
+PreloadWeight=18
+
+[Containments][37][Applets][87]
+immutability=1
+plugin=org.kde.plasma.nightcolorcontrol
+
+[Containments][37][Applets][87][Configuration]
+PreloadWeight=42
 
 [Containments][37][ConfigDialog]
 DialogHeight=540
@@ -132,100 +139,6 @@ knownItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde
 pin=true
 shownItems=org.kde.plasma.battery
 
-[Containments][52]
-activityId=
-formfactor=2
-immutability=1
-lastScreen=0
-location=3
-plugin=org.kde.panel
-wallpaperplugin=org.kde.image
-
-[Containments][52][Applets][53]
-immutability=1
-plugin=org.kde.plasma.kickoff
-
-[Containments][52][Applets][53][Configuration]
-PreloadWeight=68
-popupHeight=720
-popupWidth=922
-
-[Containments][52][Applets][53][Configuration][ConfigDialog]
-DialogHeight=540
-DialogWidth=720
-
-[Containments][52][Applets][53][Configuration][General]
-favoritesPortedToKAstats=true
-icon=distributor-logo-archlinux
-systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
-
-[Containments][52][Applets][53][Configuration][Shortcuts]
-global=Alt+F1
-
-[Containments][52][Applets][55]
-immutability=1
-plugin=org.kde.plasma.icontasks
-
-[Containments][52][Applets][55][Configuration]
-PreloadWeight=0
-
-[Containments][52][Applets][55][Configuration][ConfigDialog]
-DialogHeight=981
-DialogWidth=941
-
-[Containments][52][Applets][55][Configuration][General]
-iconSpacing=0
-launchers=
-middleClickAction=None
-showOnlyCurrentActivity=false
-showOnlyCurrentDesktop=false
-
-[Containments][52][Applets][56]
-immutability=1
-plugin=org.kde.plasma.marginsseparator
-
-[Containments][52][Applets][56][Configuration]
-PreloadWeight=0
-
-[Containments][52][Applets][57]
-immutability=1
-plugin=org.kde.plasma.systemtray
-
-[Containments][52][Applets][57][Configuration]
-PreloadWeight=100
-SystrayContainmentId=58
-
-[Containments][52][Applets][72]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
-[Containments][52][Applets][72][Configuration]
-PreloadWeight=2
-
-[Containments][52][Applets][73]
-immutability=1
-plugin=org.kde.plasma.panelspacer
-
-[Containments][52][Applets][73][Configuration]
-PreloadWeight=2
-
-[Containments][52][Applets][82]
-immutability=1
-plugin=org.kde.plasma.bluetooth
-
-[Containments][52][Applets][82][Configuration]
-PreloadWeight=33
-
-[Containments][52][ConfigDialog]
-DialogHeight=84
-DialogWidth=1920
-
-[Containments][52][Configuration]
-PreloadWeight=0
-
-[Containments][52][General]
-AppletOrder=53;73;55;56;72;82;57
-
 [Containments][58]
 activityId=
 formfactor=2
@@ -234,7 +147,7 @@ lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
 popupHeight=720
-popupWidth=1241
+popupWidth=922
 wallpaperplugin=org.kde.image
 
 [Containments][58][Applets][59]
@@ -249,7 +162,7 @@ immutability=1
 plugin=org.kde.plasma.notifications
 
 [Containments][58][Applets][60][Configuration]
-PreloadWeight=56
+PreloadWeight=24
 
 [Containments][58][Applets][61]
 immutability=1
@@ -270,7 +183,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][58][Applets][63][Configuration]
-PreloadWeight=5
+PreloadWeight=0
 
 [Containments][58][Applets][63][Configuration][General]
 migrated=true
@@ -301,7 +214,7 @@ immutability=1
 plugin=org.kde.plasma.clipboard
 
 [Containments][58][Applets][67][Configuration]
-PreloadWeight=16
+PreloadWeight=0
 
 [Containments][58][Applets][70]
 immutability=1
@@ -315,14 +228,21 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][58][Applets][71][Configuration]
-PreloadWeight=6
+PreloadWeight=0
 
 [Containments][58][Applets][83]
 immutability=1
-plugin=org.kde.plasma.mediacontroller
+plugin=org.kde.kscreen
 
 [Containments][58][Applets][83][Configuration]
-PreloadWeight=49
+PreloadWeight=17
+
+[Containments][58][Applets][87]
+immutability=1
+plugin=org.kde.plasma.mediacontroller
+
+[Containments][58][Applets][87][Configuration]
+PreloadWeight=34
 
 [Containments][58][Configuration]
 PreloadWeight=0
@@ -423,6 +343,9 @@ PreloadWeight=0
 immutability=1
 plugin=org.kde.kscreen
 
+[Containments][8][Applets][84][Configuration]
+PreloadWeight=18
+
 [Containments][8][Applets][9]
 immutability=1
 plugin=org.kde.plasma.keyboardindicator
@@ -437,11 +360,10 @@ PreloadWeight=0
 extraItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen
 knownItems=org.kde.plasma.keyboardindicator,org.kde.plasma.notifications,org.kde.plasma.keyboardlayout,org.kde.plasma.nightcolorcontrol,org.kde.plasma.mediacontroller,org.kde.plasma.volume,org.kde.plasma.manage-inputmethod,org.kde.plasma.devicenotifier,org.kde.plasma.vault,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.plasma.networkmanagement,org.kde.plasma.clipboard,org.kde.kscreen
 
-[Containments][84]
+[Containments][86]
 ItemGeometries-1920x1080=
-ItemGeometries-2560x1440=
 ItemGeometriesHorizontal=
-activityId=53d5abe2-0663-487d-8cf0-5e97405fddbe
+activityId=e599b4bb-74e5-478e-b716-70719c34c2b1
 formfactor=0
 immutability=1
 lastScreen=0
@@ -449,27 +371,13 @@ location=0
 plugin=org.kde.plasma.folder
 wallpaperplugin=org.kde.image
 
-[Containments][84][ConfigDialog]
-DialogHeight=1339
-DialogWidth=833
+[Containments][86][Configuration]
+PreloadWeight=18
 
-[Containments][84][Configuration]
-PreloadWeight=42
-
-[Containments][85]
-ItemGeometries-2560x1440=
-ItemGeometriesHorizontal=
-activityId=53d5abe2-0663-487d-8cf0-5e97405fddbe
-formfactor=0
-immutability=1
-lastScreen=1
-location=0
-plugin=org.kde.plasma.folder
-wallpaperplugin=org.kde.image
-
-[Containments][85][Configuration]
-PreloadWeight=42
+[Containments][86][General]
+ToolBoxButtonState=topcenter
+ToolBoxButtonX=548
 
 [ScreenMapping]
-itemsOnDisabledScreens=
-screenMapping=desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,53d5abe2-0663-487d-8cf0-5e97405fddbe,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,53d5abe2-0663-487d-8cf0-5e97405fddbe,desktop:/JurassicPark.timestamp,0,53d5abe2-0663-487d-8cf0-5e97405fddbe,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,53d5abe2-0663-487d-8cf0-5e97405fddbe,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1
+itemsOnDisabledScreens=1,e599b4bb-74e5-478e-b716-70719c34c2b1,1,desktop:/Screenshot_2023-03-04_20-46-16.png,2,e599b4bb-74e5-478e-b716-70719c34c2b1,10,desktop:/01_Integration.pdf,desktop:/Developer,desktop:/Files,desktop:/00_Lebenssinn.pdf,desktop:/key,desktop:/03_Krieg.pdf,desktop:/config,desktop:/02_Herkunft.pdf,desktop:/00_Migration.pdf,desktop:/Wallpapers
+screenMapping=desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1
