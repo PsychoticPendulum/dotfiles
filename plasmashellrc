@@ -35,6 +35,14 @@ thickness=32
 maxLength=1664
 minLength=1664
 
+[PlasmaViews][Panel 88]
+floating=1
+panelOpacity=0
+panelVisibility=0
+
+[PlasmaViews][Panel 88][Defaults]
+thickness=32
+
 [ScreenConnectors]
 0=DP-1-8
 1=DP-1-2
