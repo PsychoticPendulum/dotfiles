@@ -1,0 +1,11 @@
+[$Version]
+update_info=kscreenlocker.upd:0.1-autolock
+
+[Daemon]
+Autolock=false
+LockGrace=0
+LockOnResume=false
+
+[Greeter][Wallpaper][org.kde.image][General]
+Image=/home/luks/Wallpapers/foresty.png
+PreviewImage=/home/luks/Wallpapers/foresty.png
