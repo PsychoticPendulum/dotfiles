@@ -116,7 +116,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][37][Applets][84][Configuration]
-PreloadWeight=18
+PreloadWeight=2
 
 [Containments][37][Applets][87]
 immutability=1
@@ -245,7 +245,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][58][Applets][87][Configuration]
-PreloadWeight=34
+PreloadWeight=18
 
 [Containments][58][Configuration]
 PreloadWeight=0
@@ -523,6 +523,9 @@ PreloadWeight=34
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
+[Containments][93][Applets][108][Configuration]
+PreloadWeight=34
+
 [Containments][93][Applets][94]
 immutability=1
 plugin=org.kde.plasma.notifications
@@ -584,5 +587,5 @@ systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 launchers=
 
 [ScreenMapping]
-itemsOnDisabledScreens=4,e599b4bb-74e5-478e-b716-70719c34c2b1,10,desktop:/01_Integration.pdf,desktop:/Developer,desktop:/Files,desktop:/00_Lebenssinn.pdf,desktop:/key,desktop:/03_Krieg.pdf,desktop:/config,desktop:/02_Herkunft.pdf,desktop:/00_Migration.pdf,desktop:/Wallpapers,3,e599b4bb-74e5-478e-b716-70719c34c2b1,1,desktop:/Screenshot_2023-03-04_20-46-16.png,2,e599b4bb-74e5-478e-b716-70719c34c2b1,1,desktop:/dotfiles
-screenMapping=desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Screenshot_2023-03-04_20-46-16.png,1,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/dotfiles,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1
+itemsOnDisabledScreens=2,e599b4bb-74e5-478e-b716-70719c34c2b1,1,desktop:/dotfiles,4,e599b4bb-74e5-478e-b716-70719c34c2b1,10,desktop:/01_Integration.pdf,desktop:/Developer,desktop:/Files,desktop:/00_Lebenssinn.pdf,desktop:/key,desktop:/03_Krieg.pdf,desktop:/config,desktop:/02_Herkunft.pdf,desktop:/00_Migration.pdf,desktop:/Wallpapers,3,e599b4bb-74e5-478e-b716-70719c34c2b1,1,desktop:/Screenshot_2023-03-04_20-46-16.png
+screenMapping=desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Screenshot_2023-03-04_20-46-16.png,1,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/VLAN und Subnet.pptx,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1
