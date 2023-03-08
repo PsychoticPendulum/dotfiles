@@ -133,6 +133,7 @@ alias mv="mv -v"
 alias ra="ranger"
 alias nfetch="neofetch | lolcat -F 0.1 -a -s 5000 -S 174"
 alias rss="newsboat -r"
+alias goodbye="pub light/hall off ; poweroff"
 
 # I am an idiot
 alias lös="ls"
