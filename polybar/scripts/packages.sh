@@ -8,7 +8,7 @@ if [[ $distro =~ "Void" ]]; then
 	COLOR=""
 else
 	TOTAL=$(pacman -Q | wc -l)
-	PENDING=$(checkupdates 2> /dev/null | wc -l )
+	# PENDING=$(checkupdates 2> /dev/null | wc -l )
 	COLOR=""
 fi
 

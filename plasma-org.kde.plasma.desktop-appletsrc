@@ -5,6 +5,15 @@ wheel:Vertical;NoModifier=org.kde.switchdesktop
 [ActionPlugins][1]
 RightButton;NoModifier=org.kde.contextmenu
 
+[Containments][109]
+activityId=e599b4bb-74e5-478e-b716-70719c34c2b1
+formfactor=0
+immutability=1
+lastScreen=2
+location=0
+plugin=org.kde.plasma.folder
+wallpaperplugin=org.kde.image
+
 [Containments][37]
 activityId=
 formfactor=2
@@ -116,7 +125,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][37][Applets][84][Configuration]
-PreloadWeight=2
+PreloadWeight=0
 
 [Containments][37][Applets][87]
 immutability=1
@@ -245,7 +254,7 @@ immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][58][Applets][87][Configuration]
-PreloadWeight=18
+PreloadWeight=0
 
 [Containments][58][Configuration]
 PreloadWeight=0
@@ -384,6 +393,8 @@ ToolBoxButtonX=751
 ToolBoxButtonY=40
 
 [Containments][87]
+ItemGeometries-1920x1080=
+ItemGeometriesHorizontal=
 activityId=e599b4bb-74e5-478e-b716-70719c34c2b1
 formfactor=0
 immutability=1
@@ -455,7 +466,7 @@ immutability=1
 plugin=org.kde.plasma.systemtray
 
 [Containments][88][Applets][92][Configuration]
-PreloadWeight=39
+PreloadWeight=59
 SystrayContainmentId=93
 
 [Containments][88][ConfigDialog]
@@ -475,6 +486,8 @@ immutability=1
 lastScreen=0
 location=3
 plugin=org.kde.plasma.private.systemtray
+popupHeight=1314
+popupWidth=2517
 wallpaperplugin=org.kde.image
 
 [Containments][93][Applets][100]
@@ -517,14 +530,14 @@ immutability=1
 plugin=org.kde.plasma.networkmanagement
 
 [Containments][93][Applets][105][Configuration]
-PreloadWeight=34
+PreloadWeight=39
 
 [Containments][93][Applets][108]
 immutability=1
 plugin=org.kde.plasma.mediacontroller
 
 [Containments][93][Applets][108][Configuration]
-PreloadWeight=34
+PreloadWeight=0
 
 [Containments][93][Applets][94]
 immutability=1
@@ -538,7 +551,7 @@ immutability=1
 plugin=org.kde.plasma.volume
 
 [Containments][93][Applets][95][Configuration]
-PreloadWeight=34
+PreloadWeight=39
 
 [Containments][93][Applets][95][Configuration][General]
 migrated=true
@@ -555,7 +568,7 @@ immutability=1
 plugin=org.kde.kscreen
 
 [Containments][93][Applets][97][Configuration]
-PreloadWeight=34
+PreloadWeight=39
 
 [Containments][93][Applets][98]
 immutability=1
@@ -569,7 +582,11 @@ immutability=1
 plugin=org.kde.plasma.devicenotifier
 
 [Containments][93][Applets][99][Configuration]
-PreloadWeight=34
+PreloadWeight=44
+
+[Containments][93][ConfigDialog]
+DialogHeight=1333
+DialogWidth=2536
 
 [Containments][93][Configuration]
 PreloadWeight=34
@@ -587,5 +604,5 @@ systemFavorites=suspend\\,hibernate\\,reboot\\,shutdown
 launchers=
 
 [ScreenMapping]
-itemsOnDisabledScreens=2,e599b4bb-74e5-478e-b716-70719c34c2b1,1,desktop:/dotfiles,4,e599b4bb-74e5-478e-b716-70719c34c2b1,10,desktop:/01_Integration.pdf,desktop:/Developer,desktop:/Files,desktop:/00_Lebenssinn.pdf,desktop:/key,desktop:/03_Krieg.pdf,desktop:/config,desktop:/02_Herkunft.pdf,desktop:/00_Migration.pdf,desktop:/Wallpapers,3,e599b4bb-74e5-478e-b716-70719c34c2b1,1,desktop:/Screenshot_2023-03-04_20-46-16.png
-screenMapping=desktop:/config,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Migration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/01_Integration.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Screenshot_2023-03-04_20-46-16.png,1,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/00_Lebenssinn.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/VLAN und Subnet.pptx,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/key,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/03_Krieg.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/02_Herkunft.pdf,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1
+itemsOnDisabledScreens=2,e599b4bb-74e5-478e-b716-70719c34c2b1,10,desktop:/Developer,desktop:/key,desktop:/03_Krieg.pdf,desktop:/00_Migration.pdf,desktop:/02_Herkunft.pdf,desktop:/Files,desktop:/01_Integration.pdf,desktop:/00_Lebenssinn.pdf,desktop:/config,desktop:/Wallpapers
+screenMapping=desktop:/Screenshot_2023-03-04_20-46-16.png,1,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Wallpapers,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Developer,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/dotfiles,0,e599b4bb-74e5-478e-b716-70719c34c2b1,desktop:/Files,0,e599b4bb-74e5-478e-b716-70719c34c2b1
