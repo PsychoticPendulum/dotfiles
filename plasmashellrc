@@ -3,6 +3,9 @@ Recent Files[$e]=file:$HOME/Wallpapers/585504.jpg,file:$HOME/Wallpapers/ArtixPla
 Recent URLs[$e]=file:$HOME/Wallpapers/
 detailViewIconSize=16
 
+[Notification Messages]
+klipperClearHistoryAskAgain=false
+
 [PlasmaViews][Panel 2]
 alignment=132
 floating=1

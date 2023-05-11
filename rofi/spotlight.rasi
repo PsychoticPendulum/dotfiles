@@ -7,7 +7,7 @@
 * {
     font:   "Montserrat 12";
 
-    bg0:     #181b28;
+    bg0:     #282b38;
     bg1:     #181b28;
     bg2:     #810af5;
 
@@ -27,7 +27,7 @@ window {
     background-color:   @bg0;
 
     location:       center;
-    width:          640;
+    width:          480;
     border-radius:  8;
 }
 
