@@ -188,6 +188,7 @@ assign [class="Gimp"] → number 20:$3
 assign [class="Signal"] → number 30:$4
 assign [class="discord"] → number 30:$4a
 assign [class="Element"] → number 30:$4
+assign [class="Telegram"] → number 30:$4
 assign [class="Steam" instance="Steam"] → number 40:$5
 assign [class="VirtualBox*"] → number 60:$7
 
@@ -252,6 +253,7 @@ bindsym $alt+shift+b exec brave
 #	Chat
 bindsym $mod+shift+s exec signal-desktop
 bindsym $mod+shift+y exec element-desktop
+bindsym $mod+shift+t exec telegram-desktop
 
 #	GUI Applications
 bindsym $mod+shift+g exec gimp
