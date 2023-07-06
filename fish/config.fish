@@ -3,11 +3,11 @@
 fish_vi_key_bindings
 
 # Git
-alias gc="git clone"
+alias gc="git commit -m"
 alias gcm="git commit -m"
 alias gp="git push"
-alias gu="git pull"
-alias ga="git add"
+alias grm="git remote update && git pull"
+alias ga="git add -u"
 
 set __fish_git_prompt_show_informative_status
 set __fish_git_prompt_showcolorhints
