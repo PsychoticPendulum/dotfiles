@@ -6,7 +6,7 @@ fish_vi_key_bindings
 alias gc="git commit -m"
 alias gcm="git commit -m"
 alias gp="git push"
-alias grm="git remote update && git pull"
+alias gru="git remote update && git pull"
 alias ga="git add -u"
 
 set __fish_git_prompt_show_informative_status
@@ -151,8 +151,8 @@ alias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
 
 # Things I need to remember
 alias token="cat ~/.info/token.pgp"
-alias nasty="sudo mount -t nfs 192.168.4.23:/nasty /mnt/NAS/"
-alias bzod="rclone mount --daemon bzod: /mnt/share/OneDriveBZ"
+alias nasty="sudo mount -t nfs 192.168.4.254:/nastier /mnt/NAS/"
+alias bzod="rclone mount --daemon bzod: /mnt/share/BZOneDrive"
 alias od="rclone mount --daemon od: /mnt/share/OneDrive"
 alias gdr="rclone mount --daemon gdr: /mnt/share/GoogleDrive"
 alias webdav="rclone mount --daemon webDAV: /mnt/share/webdav"
