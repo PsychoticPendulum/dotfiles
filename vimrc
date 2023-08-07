@@ -13,3 +13,16 @@ highlight ColorColumn ctermbg=7 guibg=black
 syntax enable
 
 autocmd Filetype python setlocal expandtab tabstop=4 shiftwidth=4
+
+call plug#begin('~/.vim/plugged')
+Plug 'preservim/nerdtree'
+" Add other plugins here
+call plug#end()
+
+let mapleader = " "
+nnoremap h :wincmd h<CR>
+nnoremap j :wincmd j<CR>
+nnoremap k :wincmd k<CR>
+nnoremap l :wincmd l<CR>
+
+nnoremap tt :NERDTreeToggle<CR>
