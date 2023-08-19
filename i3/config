@@ -115,67 +115,6 @@ bindsym $mod+Tab workspace next_on_output
 bindsym $mod+shift+Tab workspace prev_on_output
 
 #	|-----------------------|
-#	|		i3wsmgr			|
-#	|-----------------------|
-
-# static workspace output pins
-workspace 0:$1 output eDP-1
-workspace 2000:$2 output DP-1-8
-
-# Subworkspaces
-bindsym $altgr+i exec i3wsmgr-msg ws subwsrecords ignore toggle
-
-bindsym $altgr+j exec i3wsmgr-msg subws switch 0
-bindsym $altgr+k exec i3wsmgr-msg subws switch 1
-bindsym $altgr+l exec i3wsmgr-msg subws switch 2
-
-bindsym $altgr+shift+j exec i3wsmgr-msg subws move 0
-bindsym $altgr+shift+k exec i3wsmgr-msg subws move 1
-bindsym $altgr+shift+l exec i3wsmgr-msg subws move 2
-# Group control (activation, clear...)
-mode "groupctl" {
-  # group activation
-  bindsym a exec i3wsmgr-msg group activate a; mode "default"
-  bindsym b exec i3wsmgr-msg group activate b; mode "default"
-  bindsym c exec i3wsmgr-msg group activate c; mode "default"
-  bindsym d exec i3wsmgr-msg group activate d; mode "default"
-  bindsym e exec i3wsmgr-msg group activate e; mode "default"
-  bindsym f exec i3wsmgr-msg group activate f; mode "default"
-  bindsym g exec i3wsmgr-msg group activate g; mode "default"
-  bindsym h exec i3wsmgr-msg group activate h; mode "default"
-  bindsym i exec i3wsmgr-msg group activate i; mode "default"
-  bindsym j exec i3wsmgr-msg group activate j; mode "default"
-  bindsym k exec i3wsmgr-msg group activate k; mode "default"
-  bindsym l exec i3wsmgr-msg group activate l; mode "default"
-  bindsym m exec i3wsmgr-msg group activate m; mode "default"
-  bindsym n exec i3wsmgr-msg group activate n; mode "default"
-  bindsym o exec i3wsmgr-msg group activate o; mode "default"
-  bindsym p exec i3wsmgr-msg group activate p; mode "default"
-  bindsym q exec i3wsmgr-msg group activate q; mode "default"
-  bindsym r exec i3wsmgr-msg group activate r; mode "default"
-  bindsym s exec i3wsmgr-msg group activate s; mode "default"
-  bindsym t exec i3wsmgr-msg group activate t; mode "default"
-  bindsym u exec i3wsmgr-msg group activate u; mode "default"
-  bindsym v exec i3wsmgr-msg group activate v; mode "default"
-  bindsym w exec i3wsmgr-msg group activate w; mode "default"
-  bindsym x exec i3wsmgr-msg group activate x; mode "default"
-  bindsym y exec i3wsmgr-msg group activate y; mode "default"
-  bindsym z exec i3wsmgr-msg group activate z; mode "default"
-
-  # Clear the active group from all workspaces
-  bindsym Delete       exec i3wsmgr-msg group clear active; mode "default"
-  # Clear all groups from all workspaces
-  bindsym Shift+Delete exec i3wsmgr-msg group clear all;    mode "default"
-
-  bindsym Escape mode "default"
-  bindsym $mod+g mode "default"
-}
-bindsym $mod+g mode "groupctl"
-bindsym $altgr+g exec i3wsmgr-msg group toggle
-bindsym $altgr+n exec i3wsmgr-msg group switch rel left
-bindsym $altgr+m exec i3wsmgr-msg group switch rel right
-
-#	|-----------------------|
 #	|		Workspaces		|
 #	|-----------------------|
 
@@ -272,11 +211,8 @@ exec_always picom --config ~/.config/picom/picom.conf
 #	Polybar
 exec_always --no-startup-id "sh /home/$USER/.config/polybar/launch.sh"	
 
-exec_always --no-startup-id "sh /home/$USER/Developer/.scripts/synergy.sh"
-
 #	Init
 exec kitty "/home/$USER/Developer/.scripts/boot.sh"
 
-# exec_always "killall i3wsmgr; i3wsmgr | systemd-cat -t i3wsmgr"
 exec_always "~/Developer/.scripts/keymod.sh"
 exec_always "xmodmap /etc/xmodmap.conf"
