@@ -2,7 +2,7 @@ set belloff=all
 set noerrorbells
 set backspace=indent,eol,start
 set number relativenumber
-set tabstop=4 softtabstop=4
+setlocal expandtab tabstop=4 shiftwidth=4
 set nowrap
 set ruler
 set smartindent
