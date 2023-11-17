@@ -200,6 +200,7 @@ bindsym $mod+shift+g exec gimp
 bindsym $mod+shift+a exec pcmanfm
 bindsym $mod+shift+c exec code
 bindsym $mod+shift+x exec steam
+bindsym $mod+p exec arandr
 
 #	|-----------------------|
 #	|		Autostart		|
