@@ -139,6 +139,7 @@ alias goodbye="pub light/hall off ; poweroff"
 alias lös="ls"
 alias ös="ls"
 alias cös="cls"
+alias SHIT="xdotool key Caps_Lock"
 
 # Network
 alias snf="sudo python3 ~/Developer/.scripts/sniffer.py"
