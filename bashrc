@@ -1,6 +1,4 @@
-export PATH=$PATH:/home/$USER/.scripts
-export PATH=$PATH:/home/$USER/Developer/.scripts
-export PATH=$PATH:/home/$USER/Developer/.scripts/bin
+export PATH=$PATH:/home/$USER/bin
 export PATH=$PATH:/home/$USER/.screenlayout
 export EDITOR="vim"
 export SHELL="fish"

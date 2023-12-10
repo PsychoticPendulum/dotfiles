@@ -113,16 +113,16 @@ alias :D="figlet :D"
 alias :P="figlet :P"
 
 # Config Shortcuts
-alias scriptc="cd ~/Developer/.scripts/"
+alias scriptc="cd ~/bin/"
 alias fishc="cd ~/.config/fish/"
 alias i3c="cd ~/.config/i3"
 alias polyc="cd ~/.config/polybar"
-alias themec="cd ~/Developer/.scripts/themes"
+alias themec="cd ~/bin/themes"
 
 # Better Shell
 alias :wq="i3 kill"
 alias :q="i3 kill"
-alias cls="cd ; clear ; /home/$USER/Developer/.scripts/neofetch.sh"
+alias cls="cd ; clear ; /home/$USER/bin/neofetch.sh"
 alias c="clear ; cd"
 alias q="clear"
 alias ll="lsd -Alh"
@@ -142,7 +142,7 @@ alias cös="cls"
 alias SHIT="xdotool key Caps_Lock"
 
 # Network
-alias snf="sudo python3 ~/Developer/.scripts/sniffer.py"
+alias snf="sudo python3 ~/bin/sniffer.py"
 alias pg="ping -c 4 8.8.8.8"
 
 # Gaming
