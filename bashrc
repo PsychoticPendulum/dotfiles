@@ -2,7 +2,7 @@ export PATH=$PATH:/home/$USER/bin
 export PATH=$PATH:/home/$USER/.screenlayout
 export EDITOR="vim"
 export SHELL="fish"
-export GOPATH=$HOME/Developer/GO/ENV/
+export GOPATH=$HOME/bin/.go/
 
 LPIID="LPI000525263"
 
