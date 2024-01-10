@@ -174,7 +174,7 @@ bindsym $alt+Return exec xfce4-terminal
 bindsym $mod+space exec "/home/$USER/bin/keymap.sh"
 
 #	Lock
-bindsym $mod+l exec i3lock -i ~/Wallpapers/lock.png -c 000000
+bindsym $mod+l exec i3lock -i ~/Wallpapers/lock.png -c 214748
 
 #	Screenshot
 bindsym $mod+shift+p exec xfce4-screenshooter
