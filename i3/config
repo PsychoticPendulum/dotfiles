@@ -185,6 +185,7 @@ bindsym $mod+d exec rofi -show drun -lines 23 -eh 1 -location 0 -width 644 -font
 bindsym $mod+shift+d exec rofi -show run -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "~/.config/rofi/spotlight.rasi"
 bindsym $mod+shift+w exec rofi -show window -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "~/.config/rofi/spotlight.rasi"
 bindsym $alt+shift+s exec rofi -show screenlayout -lines 0 -eh 1 -location 0 -width 644 -font "Source Code Pro Medium 10" -show-icons -theme "~/.config/rofi/spotlight.rasi" -config ~/.config/rofi/modes/screenlayout.rasi
+bindsym $alt+shift+r exec "~/bin/rdp.sh"
 
 #	Browser
 bindsym $mod+shift+f exec firefox
