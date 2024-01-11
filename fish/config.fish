@@ -154,9 +154,9 @@ alias sin="java /mnt/veracrypt1/School/Programming/src/Sinuswave/Sinuswave.java"
 # Things I need to remember
 alias token="cat ~/.info/token.pgp"
 alias nasty="sudo mount -t nfs 192.168.4.254:/nastier /mnt/NAS/"
-alias bzod="rclone mount --daemon bzod: /mnt/share/BZOneDrive"
-alias od="rclone mount --daemon od: /mnt/share/OneDrive"
-alias gdr="rclone mount --daemon gdr: /mnt/share/GoogleDrive"
+alias bzod="rclone mount --daemon bzod: /mnt/share/bzod"
+alias od="rclone mount --daemon od: /mnt/share/od"
+alias gdr="rclone mount --daemon gdr: /mnt/share/gd"
 alias webdav="rclone mount --daemon webDAV: /mnt/share/webdav"
 
 # Start X Sessions
