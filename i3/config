@@ -120,17 +120,24 @@ bindsym $mod+shift+Tab workspace prev_on_output
 
 assign [class="firefox"] → number $2
 assign [class="brave"] → number $2
+
 assign [class="SimpleScreenRecorder"] → number $3
 assign [class="kdenlive"] → number $3
 assign [class="mpv"] → number $3
 assign [class="Gimp"] → number $3
+
 assign [class="Signal"] → number $4
-assign [class="discord"] → number $4a
+assign [class="discord"] → number $4
 assign [class="Element"] → number $4
 assign [class="Telegram"] → number $4
+
 assign [class="Steam" instance="Steam"] → number $5
+assign [class="teams-for-linux"] → number $5
+assign [class="msoutlook-nativefier*"] → number $5
+
 assign [class="VirtualBox*"] → number $7
 assign [class="plasmashell"] → number $7
+
 
 #	|-----------------------|
 #	|		Plasma			|
