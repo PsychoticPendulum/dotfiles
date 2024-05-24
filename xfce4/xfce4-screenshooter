@@ -5,9 +5,9 @@ screenshot_dir=file:/home/luks
 enable_imgur_upload=true
 action=1
 delay=0
-region=3
+region=2
 show_mouse=1
 show_border=1
 show_in_folder=false
-custom_action_command=none
+custom_action_command=/usr/lib/xfce4/screenshooter/scripts/imgur-upload.sh %f %imgur_client_id
 
