@@ -40,7 +40,7 @@ font-0 = Source Code Pro:pixelsize=9;1
 font-1 = unifont:fontformat=truetype:size=8:antialias=false;0
 font-2 = FontAwesome:pixelsize=9;1
 
-modules-left = i3 ping ip vpn temp 
+modules-left = i3 ping ip vpn volume
 modules-center = cpu memory 
 modules-right = kernel kblayout packages uptime filesystem dates battery
 
@@ -106,9 +106,9 @@ format-prefix-background = ${colors.background}
 #   |       TEMP			|
 #   |-----------------------|
 
-[module/temp]
+[module/volume]
 type = custom/script
-exec = sh ~/.config/polybar/scripts/temp.sh
+exec = sh ~/.config/polybar/scripts/volume.sh
 interval = 1
 label = %output%
 format-prefix = "  "
