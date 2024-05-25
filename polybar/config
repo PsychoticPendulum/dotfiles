@@ -111,7 +111,7 @@ type = custom/script
 exec = sh ~/.config/polybar/scripts/volume.sh
 interval = 1
 label = %output%
-format-prefix = "  "
+format-prefix = "  "
 format-prefix-foreground = ${colors.primary}
 format-prefix-background = ${colors.background}
 
