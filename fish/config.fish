@@ -9,6 +9,9 @@ alias gp="git push"
 alias gru="git remote update && git pull"
 alias ga="git add -u"
 
+set -Ux EDITOR vim
+set -Ux VISUAL vim
+
 set __fish_git_prompt_show_informative_status
 set __fish_git_prompt_showcolorhints
 set __fish_git_prompt_showupstream "informative"

@@ -179,7 +179,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2.5%
 set $TERMINAL kitty
 bindsym $mod+Return exec kitty
 bindsym $mod+Escape exec kitty
-bindsym $alt+Return exec xfce4-terminal
+bindsym $alt+Return exec xfce4-terminal -e "$HOME/bin/ssz.sh"
 
 #	Switch kb layout
 bindsym $mod+space exec "/home/$USER/bin/keymap.sh"
