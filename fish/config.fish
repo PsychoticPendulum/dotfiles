@@ -65,7 +65,7 @@ function fish_prompt
 	echo -n "$user"
 	set_color ff0
 	echo -n "@"
-	set_color 0ff
+	set_color 40f
 	echo -n "$hostname"
 	set_color 0f0
 	echo -n "] "
