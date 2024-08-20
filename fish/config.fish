@@ -65,7 +65,7 @@ function fish_prompt
 	echo -n "$user"
 	set_color ff0
 	echo -n "@"
-	set_color 40f
+	set_color 0ff
 	echo -n "$hostname"
 	set_color 0f0
 	echo -n "] "
@@ -166,3 +166,16 @@ alias webdav="rclone mount --daemon webDAV: /mnt/share/webdav"
 alias skde="startx /bin/startplasma-x11"
 alias si3="startx /bin/i3"
 alias logout="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
+
+alias k="kubectl"
+alias t="tmux"
+
+function start_tmux
+    if not set -q TMUX
+        if not string match -q 'tmux' $TERM
+            exec ~/bin/tmux.sh
+        end
+    end
+end
+
+start_tmux

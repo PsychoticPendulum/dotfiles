@@ -5,5 +5,6 @@ export SHELL="fish"
 export GOPATH=$HOME/bin/.go/
 
 LPIID="LPI000525263"
+alias t="~/bin/tmux.sh"
 
 fish
