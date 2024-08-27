@@ -167,10 +167,12 @@ alias skde="startx /bin/startplasma-x11"
 alias si3="startx /bin/i3"
 alias logout="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
 
+alias t="tmux"
+
 alias k="kubectl"
 alias kns="kubens"
 alias ksx="kubectx"
-alias t="tmux"
+alias kfg="vim ~/.kube/config -c 'set syntax=yaml'"
 
 function ktf
 	set cmd $(history | grep -E "^k " | sort | uniq | fzf)
