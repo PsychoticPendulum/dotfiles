@@ -65,7 +65,7 @@ function fish_prompt
 	echo -n "$user"
 	set_color ff0
 	echo -n "@"
-	set_color 40f
+	set_color 0ff
 	echo -n "$hostname"
 	set_color 0f0
 	echo -n "] "
@@ -103,7 +103,7 @@ end
 
 # Greeting
 function fish_greeting
-	clear
+	cat $HOME/bin/assets/loaf.txt | shuf | head -n 1 | lolcat
 end
 
 # ---------------
@@ -168,7 +168,14 @@ alias si3="startx /bin/i3"
 alias logout="qdbus org.kde.ksmserver /KSMServer logout 1 3 3"
 
 alias k="kubectl"
+alias kns="kubens"
+alias ksx="kubectx"
 alias t="tmux"
+
+function ktf
+	set cmd $(history | grep -E "^k " | sort | uniq | fzf)
+	commandline $cmd
+end
 
 function start_tmux
     if not set -q TMUX
