@@ -52,7 +52,6 @@ set __fish_git_prompt_char_upstream_equal ' '
 # Set prompt
 function fish_prompt
 	set --local exit_code $status
-	# set --local directory (basename $PWD)
 	set --local directory $PWD
 	set --local full_directory $PWD
 	set --local outside "/mnt"
