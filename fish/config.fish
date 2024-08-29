@@ -66,7 +66,7 @@ function fish_prompt
 	set_color ff0
 	echo -n "@"
 	set_color 0ff
-	echo -n "$hostname"
+	echo -n "$hostname" | lolcat
 	set_color 0f0
 	echo -n "] "
 
@@ -175,7 +175,7 @@ alias ksx="kubectx"
 alias kfg="vim ~/.kube/config -c 'set syntax=yaml'"
 
 function ktf
-	set cmd $(history | grep -E "^k " | sort | uniq | fzf)
+	set cmd $(history | grep -E "^(k |kube)" | sort | uniq | fzf)
 	commandline $cmd
 end
 
