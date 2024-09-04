@@ -170,7 +170,7 @@ alias t="tmux"
 
 alias k="kubectl"
 alias kns="kubens"
-alias ksx="kubectx"
+alias ktx="kubectx"
 alias kfg="vim ~/.kube/config -c 'set syntax=yaml'"
 
 function ktf
