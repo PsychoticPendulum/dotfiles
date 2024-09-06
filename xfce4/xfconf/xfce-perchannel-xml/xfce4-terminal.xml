@@ -2,4 +2,7 @@
 
 <channel name="xfce4-terminal" version="1.0">
   <property name="misc-confirm-close" type="bool" value="false"/>
+  <property name="font-name" type="string" value="Source Code Pro Medium 12"/>
+  <property name="misc-borders-default" type="bool" value="false"/>
+  <property name="misc-menubar-default" type="bool" value="false"/>
 </channel>

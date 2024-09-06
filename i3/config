@@ -179,7 +179,7 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume @DEFAULT_SINK@ -2.5%
 set $TERMINAL kitty
 bindsym $mod+Return exec kitty
 bindsym $mod+Escape exec kitty
-bindsym $alt+Return exec xfce4-terminal -e "$HOME/bin/ssz.sh"
+bindsym $alt+Return exec xfce4-terminal
 
 #	Switch kb layout
 bindsym $mod+space exec "/home/$USER/bin/keymap.sh"
@@ -219,7 +219,7 @@ bindsym $mod+p exec arandr
 #	|-----------------------|
 
 #	Picom
-exec_always picom --backend=glx --config ~/.config/picom/picom.conf
+# exec_always picom --backend=glx --config ~/.config/picom/picom.conf
 
 #	Polybar
 exec_always --no-startup-id "sh /home/$USER/.config/polybar/launch.sh"	

@@ -36,18 +36,19 @@ set __fish_git_prompt_color_upstream_diverged red
 set __fish_git_prompt_color_upstream_equal green
 
 
-set __fish_git_prompt_char_cleanstate ' '
-set __fish_git_prompt_char_conflictedstate ' '
-set __fish_git_prompt_char_dirtystate ' '
-set __fish_git_prompt_char_invalidstate ' '
-set __fish_git_prompt_char_stagedstate ' '
-set __fish_git_prompt_char_stashstate ' '
-set __fish_git_prompt_char_stateseparator ' | '
-set __fish_git_prompt_char_untrackedfiles ' '
-set __fish_git_prompt_char_upstream_ahead ' '
-set __fish_git_prompt_char_upstream_behind ' '
-set __fish_git_prompt_char_upstream_diverged ' '
-set __fish_git_prompt_char_upstream_equal ' '
+set __fish_git_prompt_char_cleanstate '✔️'      # Repository is clean
+set __fish_git_prompt_char_conflictedstate '⚠️'  # Merge conflicts
+set __fish_git_prompt_char_dirtystate '✗'       # Unstaged changes
+set __fish_git_prompt_char_invalidstate '❌'     # Invalid state
+set __fish_git_prompt_char_stagedstate '☑️'     # Staged changes
+set __fish_git_prompt_char_stashstate '📥'       # Stashed changes
+set __fish_git_prompt_char_stateseparator ' | '  # Separator
+set __fish_git_prompt_char_untrackedfiles '🔍'   # Untracked files
+set __fish_git_prompt_char_upstream_ahead '⬆️'  # Ahead of upstream
+set __fish_git_prompt_char_upstream_behind '⬇️'  # Behind upstream
+set __fish_git_prompt_char_upstream_diverged '🔀' # Diverged from upstream
+set __fish_git_prompt_char_upstream_equal '🔄'   # Equal to upstream
+
 
 # Set prompt
 function fish_prompt
