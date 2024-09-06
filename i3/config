@@ -219,7 +219,7 @@ bindsym $mod+p exec arandr
 #	|-----------------------|
 
 #	Picom
-# exec_always picom --backend=glx --config ~/.config/picom/picom.conf
+exec_always picom --backend=glx --config ~/.config/picom/picom.conf
 
 #	Polybar
 exec_always --no-startup-id "sh /home/$USER/.config/polybar/launch.sh"	
